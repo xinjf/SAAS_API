@@ -1,0 +1,15 @@
+[2020-10-22 13:50:40,132] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: -----------测试开始------------------
+[2020-10-22 13:50:40,133] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 生成接口自动化测试报告:2020_10_22-13_50_40_report.html
+[2020-10-22 13:53:59,801] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: -----------测试开始------------------
+[2020-10-22 13:53:59,802] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 生成接口自动化测试报告:2020_10_22-13_53_59_report.html
+[2020-10-22 13:54:03,130] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 用例test_01_1 (firm.test_firm_add.TestFirmAdd)执行成功
+[2020-10-22 13:54:06,560] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 用例test_01_2 (firm.test_firm_add.TestFirmAdd)执行成功
+[2020-10-22 13:54:07,602] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 用例test_01_3 (firm.test_firm_add.TestFirmAdd)执行成功
+[2020-10-22 13:54:08,700] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 用例test_01_1 (firm.test_firm_list.TestFirmAdd)执行成功
+[2020-10-22 13:54:09,221] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 用例test_01_2 (firm.test_firm_list.TestFirmAdd)执行失败
+[2020-10-22 13:54:10,375] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 用例test_01_1 (login.test_login.TestFirmAdd)执行成功
+[2020-10-22 13:54:10,599] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 用例test_01_2 (login.test_login.TestFirmAdd)执行成功
+[2020-10-22 13:54:10,600] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: ----------删除过期的报告-------------
+[2020-10-22 13:54:10,601] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 删除文件C:\Users\pujun\Desktop\SAAS_APIAuto\logs\2020_08_12.log
+[2020-10-22 13:54:10,602] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: 删除文件C:\Users\pujun\Desktop\SAAS_APIAuto\logs\2020_08_14.log
+[2020-10-22 13:54:10,603] - C:\Users\pujun\Desktop\SAAS_APIAuto\lib\log.py] - INFO: -------接口测试流程测试完成----------
