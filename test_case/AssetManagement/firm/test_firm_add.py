@@ -1,8 +1,7 @@
-import json
 import unittest
 from ddt import ddt,data
 from lib.operate_excel_data import OperateExcel
-from utils.http_requests import http_requests
+from lib.http_requests import http_requests
 from utils.params_dispose import ParamsDispose
 from utils.dispose_response import deal_with_rely
 

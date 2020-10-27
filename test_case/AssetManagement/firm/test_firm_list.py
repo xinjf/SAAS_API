@@ -1,9 +1,8 @@
-import json
 import unittest
 from ddt import ddt,data
 from lib.operate_excel_data import OperateExcel
 from utils.dispose_response import deal_with_rely
-from utils.http_requests import http_requests
+from lib.http_requests import http_requests
 from utils.params_dispose import ParamsDispose
 
 excel_data = OperateExcel("\\AssetManagement\\firm\\firm.xlsx", sheet_name="主体列表").read_excel_data()
