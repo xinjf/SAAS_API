@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import pymysql
 from utils.operate_config import OperateIni
 from utils.settings import db_path
@@ -18,9 +16,4 @@ def connect_mysql(db_name, sql):
     data = cursor.fetchall()
     db.close()
     return data
-
-
-# print(connect_mysql("saas_activity", "SELECT * FROM activity "))
-
-
 

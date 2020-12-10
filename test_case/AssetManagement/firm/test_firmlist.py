@@ -6,10 +6,10 @@ from ddt import ddt,data
 from utils.params_dispose import ParamsDispose
 from utils.login_set import get_token
 
-excel_data = OperateExcel(r"C:\Users\pujun\Desktop\APIAuto_unittest\test_data\AssetManagement\login\Login.xlsx", sheet_name="login").read_excel_data()
+excel_data = OperateExcel(r"C:\Users\pujun\Desktop\APIAuto_unittest\test_data\AssetManagement\firm\firm.xlsx", sheet_name="FirmList").read_excel_data()
 
 @ddt
-class Test_login(unittest.TestCase):
+class Test_FirmList(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -33,7 +33,7 @@ class Test_login(unittest.TestCase):
             Test_result = "Fail"
             raise e
         finally:
-            OperateExcel(r"C:\Users\pujun\Desktop\APIAuto_unittest\test_data\AssetManagement\login\Login.xlsx", sheet_name="login").write_excel_data(item["case_id"] + 1,str(res),Test_result)
+            OperateExcel(r"C:\Users\pujun\Desktop\APIAuto_unittest\test_data\AssetManagement\firm\firm.xlsx", sheet_name="FirmList").write_excel_data(item["case_id"] + 1,str(res),Test_result)
 
 
 if __name__ == '__main__':

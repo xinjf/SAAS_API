@@ -1,10 +1,9 @@
 import sys
-from lib.run_package import *
+from lib.choose_case import *
 from lib.delete_expired_files import delete_expired_files
-from lib.log import info
-
-from utils.settings import CASES_PATH
-
+from lib.generate_htmlreport import generate_htmlreport
+from lib.generate_logs import info
+from lib.build_case import build_case
 
 OBJ_PATH = os.path.dirname(
     os.path.dirname(
@@ -14,32 +13,12 @@ OBJ_PATH = os.path.dirname(
     )
 )
 sys.path.append(OBJ_PATH)
-# discover = unittest.defaultTestLoader.discover(
-#     start_dir=CASES_PATH,
-#     pattern='*.py'
-# )
 
 
-def chooseAllCases(pattern):
-    """
-    获取TestCases下所有的测试用例
-    :param pattern: 匹配模式
-    :return: 测试用例集
-    """
-    discover_all_cases = unittest.defaultTestLoader.discover(CASES_PATH, pattern=pattern,
-                                                             top_level_dir=None)
-    return discover_all_cases
+info("-----------生成测试用例--------------")
+info("生成测试用例列表：{}".format(build_case()))
+info("-------- 开始执行用例----------------")
+generate_htmlreport().run(choose_all_cases("AssetManagement", "test*.py",))      # 执行用例
+info("-------接口测试流程测试完成----------")
+info("删除过期的报告:{}".format(delete_expired_files()))              # 删除过期文件
 
-
-
-
-if __name__ == "__main__":
-    info("-----------测试开始------------------")
-
-    generate_htmlreport().run(choose_all_cases("AssetManagement", "test*.py",))      # 执行用例
-    # info("-----------发送最新的报告------------")
-    # file = SendNewMail().find_new_file(report_path)                    # 查找最新的文件
-    # SendNewMail.send_mail_html(file)                                   # 发送获取到的最新文件
-    info("----------删除过期的报告-------------")
-    delete_expired_files()                                               # 删除过期文件
-    info("-------接口测试流程测试完成----------")

@@ -17,16 +17,12 @@ class OperateIni:
         return dict(self.conf.items(title))
 
     def ini_get_value(self, path, title, key):
-        """获取ini文件下指定title的指定key的值
-        path: 路径
-        title： ini文件的title
-        key： title下的key"""
+
         path = os.path.join(CONFIG_PATH, path)
         self.conf.read(path)
         return self.conf.get(title, key)
 
     def ini_write_value(self, path, title, key, value):
-        """写入token到ini文件，并返回token字典"""
         path = os.path.join(CONFIG_PATH, path)
         self.conf.read(path)
         self.conf.set(title, key, value)

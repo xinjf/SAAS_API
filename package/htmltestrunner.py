@@ -21,7 +21,7 @@ For more customization options, instantiates a HTMLTestRunner object.
 HTMLTestRunner is a counterpart to unittest's TextTestRunner. E.g.
 
     # output to a file
-    fp = file('my_report.html', 'wb')
+    fp = file('my_report.report', 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(
                 stream=fp,
                 title='My unit test',
@@ -67,7 +67,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
 # URL: http://tungwaiyip.info/software/HTMLTestRunner.html
-from lib.log import info
+from lib.generate_logs import info
 
 __author__ = "Wai Yip Tung,  Findyou，Adil"
 __version__ = "0.8.2.3"
@@ -149,7 +149,7 @@ class Template_mixin(object):
 
     HTML
     +------------------------+
-    |<html>                  |
+    |<report>                  |
     |  <head>                |
     |                        |
     |   STYLESHEET           |
@@ -177,7 +177,7 @@ class Template_mixin(object):
     |   +----------------+   |
     |                        |
     |  </body>               |
-    |</html>                 |
+    |</report>                 |
     +------------------------+
     """
 
@@ -196,12 +196,12 @@ class Template_mixin(object):
     # HTML Template
 
     HTML_TMPL = r"""<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE report PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<report xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>%(title)s</title>
     <meta name="generator" content="%(generator)s"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/report; charset=UTF-8"/>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
@@ -300,7 +300,7 @@ function html_escape(s) {
 %(ending)s
 
 </body>
-</html>
+</report>
 """
     # variables: (title, generator, stylesheet, heading, report, ending)
 
@@ -481,6 +481,7 @@ class _TestResult(TestResult):
         self.passrate=float(0)
 
 
+
     def startTest(self, test):
         TestResult.startTest(self, test)
         # just one buffer for both stdout and stderr
@@ -615,6 +616,8 @@ class HTMLTestRunner(Template_mixin):
         if result.success_count: status.append('通过 %s'    % result.success_count)
         if result.failure_count: status.append('失败 %s' % result.failure_count)
         if result.error_count:   status.append('错误 %s'   % result.error_count  )
+
+
         if status:
             status = '，'.join(status)
             self.passrate = str("%.2f%%" % (float(result.success_count) / float(result.success_count + result.failure_count + result.error_count) * 100))

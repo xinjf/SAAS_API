@@ -5,11 +5,8 @@ from jsonpath_rw import parse
 
 
 def deal_with_rely(data, response):
-    """正则匹配
-    data : str
-    response: {1:{"x":"x"}} 字典套字典
-    """
-    # data = json.dumps(data)   字典转化为json
+    """正则匹配"""
+
     pattern = re.compile(r"\$\{(.+?)}")
     params = pattern.findall(data)
     for p in params:
@@ -33,9 +30,4 @@ def extract_json(data, path):
         return int(value)
     except TypeError:
         raise ValueError("未能获取有效的参数或者给予的json路径不对，请检查参数设置")
-
-# if __name__ == "__main__":
-#     data = '{"id":"${2:data}","real_operator_id":105}'
-#     response = {2: {"code": 200, "message": "ok", "data": 109}}
-#     deal_with_rely(data,response)
 

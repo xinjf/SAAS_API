@@ -1,14 +1,13 @@
-# -*- coding: utf-8 -*-
 import datetime
 import os
 import time
-from lib.log import info
-from utils.settings import REPORT_PATH,LOG_PATH
+from lib.generate_logs import info
+from utils.settings import HTML_PATH,LOG_PATH
 
 
 def delete_expired_files():
     """删除过期文件"""
-    file_list = [REPORT_PATH, LOG_PATH]
+    file_list = [HTML_PATH, LOG_PATH]
     today = datetime.datetime.now()
     offset = datetime.timedelta(days=-7)        # days参数，删除多少天的文件
     re_date = (today + offset)
@@ -28,7 +27,6 @@ def delete_expired_files():
                         info('删除空目录{}'.format(path2))
                     else:
                         file_list.append(path2)   # 获取多层文件夹的数据
-                        # print("file_list:", file_list)
                     if not os.listdir(path2):
                         os.removedirs(path2)
                         info('删除空目录{}'.format(path2))
@@ -39,5 +37,4 @@ def delete_expired_files():
     except Exception as e:
         return e
 
-# delete_expired_files()
 

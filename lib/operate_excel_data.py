@@ -7,13 +7,14 @@ class OperateExcel:
     file_name: 读取的excel名称
     sheet_name: 读取的excel的sheet栏[-
     """
-    def __init__(self, file_name, sheet_name):
-        self.file_path =  DATA_PATH + file_name
+    def __init__(self, file_name=None, sheet_name = None):
+        self.file_path =  file_name
         self.sheet_name = sheet_name
 
     def read_excel_data(self):
         wb = load_workbook(self.file_path)
         sheet = wb[self.sheet_name]
+        # print("sheet:{}".format(sheet))
         test_data = []
         for i in range(2, sheet.max_row+1):
             sub_data = {
@@ -44,8 +45,16 @@ class OperateExcel:
         wb.save(filename=self.file_path)
         wb.close()
 
+    def get_excel_sheet(self):
+        wb = load_workbook(self.file_path)
+        sheet_list = wb.sheetnames
+        return  sheet_list
 
 
 
-# if __name__=="__main__":
-#     print(OperateExcel("\\AssetManagement\\login\\login.xlsx", "登录").read_excel_data())
+
+if __name__=="__main__":
+    print(OperateExcel('C:\\Users\\pujun\\Desktop\\APIAuto_unittest\\test_data\\AssetManagement\\firm\\firm.xlsx').get_excel_sheet())
+
+
+
