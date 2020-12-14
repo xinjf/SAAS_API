@@ -2,5 +2,4 @@
 
 class ParamsDispose():
     token = None
-    params = None
 

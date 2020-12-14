@@ -4,6 +4,7 @@ from utils.settings import DATA_PATH, operator_url
 
 
 class OperateYaml(object):
+
     @classmethod
     def get_yaml_data(cls, datafile):
         """读取yaml文件
@@ -22,7 +23,3 @@ class OperateYaml(object):
         check = case_data["check"]
         return url, headers, data, check
 
-#
-if __name__ == '__main__':
-    res = OperateYaml().get_yaml_data("\\AssetManagement\\firm\\firm_delete.yaml")
-    print(res)

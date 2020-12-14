@@ -6,7 +6,7 @@ from utils.settings import CONFIG_PATH
 class OperateIni:
     def __init__(self):
         self.conf = configparser.ConfigParser()
-        self.token_path = os.path.join(CONFIG_PATH, "token.ini")
+        self.token_path = os.path.join(CONFIG_PATH, "AM_token.ini")
 
     def ini_read_items(self, path, title):
         """读取ini文件并以字典返回对应的title所有的key、value
@@ -30,7 +30,8 @@ class OperateIni:
             self.conf.write(f)
 
     def ini_get_token(self):
-        return self.ini_get_value(self.token_path, "token", "token")
+        return self.ini_read_items(self.token_path,"token")
+
 
 
 

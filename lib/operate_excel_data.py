@@ -53,8 +53,6 @@ class OperateExcel:
 
 
 
-if __name__=="__main__":
-    print(OperateExcel('C:\\Users\\pujun\\Desktop\\APIAuto_unittest\\test_data\\AssetManagement\\firm\\firm.xlsx').get_excel_sheet())
 
 
 

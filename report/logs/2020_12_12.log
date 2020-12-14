@@ -1,0 +1,14 @@
+[2020-12-12 15:50:52,244] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: -----------生成测试用例--------------
+[2020-12-12 15:51:07,303] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: -----------生成测试用例--------------
+[2020-12-12 15:51:07,347] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 生成测试用例列表：['test_addfirm.py', 'test_deletefirm.py', 'test_firmlist.py', 'test_login.py']
+[2020-12-12 15:51:07,348] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: -------- 开始执行用例----------------
+[2020-12-12 15:51:07,349] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 生成接口自动化测试报告:2020_12_12-15_51_07_report.html
+[2020-12-12 15:51:09,705] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 用例test_01_1 (firm.test_addfirm.Test_AddFirm)执行成功
+[2020-12-12 15:51:11,878] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 用例test_01_2 (firm.test_addfirm.Test_AddFirm)执行成功
+[2020-12-12 15:51:13,078] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 用例test_01_3 (firm.test_addfirm.Test_AddFirm)执行成功
+[2020-12-12 15:51:14,368] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 用例test_01_1 (firm.test_firmlist.Test_FirmList)执行成功
+[2020-12-12 15:51:15,960] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 用例test_01_2 (firm.test_firmlist.Test_FirmList)执行成功
+[2020-12-12 15:51:17,229] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 用例test_01_1 (login.test_login.Test_login)执行成功
+[2020-12-12 15:51:17,449] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 用例test_01_2 (login.test_login.Test_login)执行成功
+[2020-12-12 15:51:17,450] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: -------接口测试流程测试完成----------
+[2020-12-12 15:51:17,451] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: 删除过期的报告:True
