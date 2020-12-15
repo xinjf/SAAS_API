@@ -5,7 +5,7 @@ from utils.http_requests import http_requests
 from ddt import ddt,data
 from utils.login_set import LoginSet
 
-excel_data = OperateExcel(r"C:\Users\pujun\Desktop\SAAS_API\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").read_excel_data()
+excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").read_excel_data()
 
 @ddt
 class Test_AddFirm(unittest.TestCase):
@@ -32,7 +32,7 @@ class Test_AddFirm(unittest.TestCase):
             Test_result = "Fail"
             raise e
         finally:
-            OperateExcel(r"C:\Users\pujun\Desktop\SAAS_API\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").write_excel_data(item["case_id"] + 1,str(res),Test_result)
+            OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").write_excel_data(item["case_id"] + 1,str(res),Test_result)
 
 
 if __name__ == '__main__':

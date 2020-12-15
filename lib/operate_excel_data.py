@@ -1,5 +1,5 @@
 from openpyxl import load_workbook
-from utils.settings import DATA_PATH, operator_url
+from utils.settings import BASE_PATH, operator_url
 
 
 class OperateExcel:
@@ -8,7 +8,7 @@ class OperateExcel:
     sheet_name: 读取的excel的sheet栏[-
     """
     def __init__(self, file_name=None, sheet_name = None):
-        self.file_path =  file_name
+        self.file_path =  BASE_PATH+file_name
         self.sheet_name = sheet_name
 
     def read_excel_data(self):
