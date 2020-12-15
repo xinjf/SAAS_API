@@ -4,6 +4,7 @@ from utils.dispose_response import deal_with_rely
 from utils.http_requests import http_requests
 from ddt import ddt,data
 from utils.login_set import LoginSet
+from utils.ramdom_params import RandomParams
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").read_excel_data()
 
@@ -19,9 +20,12 @@ class Test_AddFirm(unittest.TestCase):
     @data(*excel_data)
     def test_01(self,item):
         print("当前执行的测试用例是：{}".format(item["detail"]))
-        item["data"] = deal_with_rely(item["data"], self.response)
 
-        res = http_requests(url=item["url"], data=item["data"], method=item["method"],token=self.g["token"])
+        data = RandomParams().build_random_params(item["data"])
+
+        data = deal_with_rely(data, self.response)
+
+        res = http_requests(url=item["url"], data=data, method=item["method"],token=self.g["token"])
         self.response[item["case_id"]] = res
 
         try:

@@ -6,7 +6,6 @@ from jsonpath_rw import parse
 
 def deal_with_rely(data, response):
     """正则匹配"""
-
     pattern = re.compile(r"\$\{(.+?)}")
     params = pattern.findall(data)
     for p in params:
@@ -15,6 +14,7 @@ def deal_with_rely(data, response):
         value = extract_json(res_json, path)
         data = pattern.sub(str(value), data, 1)
     return json.loads(data)            # 返回的dict
+
 
 def extract_json(data, path):
     """替换参数中的正则
@@ -25,7 +25,6 @@ def extract_json(data, path):
     try:
         # data = json.loads(data)  # json转化字典
         value = [match.value for match in exe_json.find(data)]
-        print("value:{}".format(value))
         value = random.choice(value)
         return int(value)
     except TypeError:

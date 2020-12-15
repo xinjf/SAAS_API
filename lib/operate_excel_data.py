@@ -23,9 +23,9 @@ class OperateExcel:
                 "method": sheet.cell(i, 3).value,
                 "header": sheet.cell(i, 4).value,
                 "url":sheet.cell(i,5).value,
-                "sql": sheet.cell(i, 6).value,
-                "sql_check": sheet.cell(i, 7).value,
-                "data": sheet.cell(i, 8).value,
+                "data": sheet.cell(i, 6).value,
+                "sql": sheet.cell(i, 7).value,
+                "sql_check": sheet.cell(i, 8).value,
                 "check_result":sheet.cell(i, 9).value}
             if sub_data["case_id"] is None:
                 break
@@ -51,8 +51,6 @@ class OperateExcel:
         wb = load_workbook(self.file_path)
         sheet_list = wb.sheetnames
         return  sheet_list
-
-
 
 
 
