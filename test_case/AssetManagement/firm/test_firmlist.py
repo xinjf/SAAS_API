@@ -6,6 +6,7 @@ from ddt import ddt,data
 from utils.login_set import LoginSet
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="FirmList").read_excel_data()
+print(excel_data)
 
 @ddt
 class Test_FirmList(unittest.TestCase):

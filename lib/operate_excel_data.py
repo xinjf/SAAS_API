@@ -23,8 +23,10 @@ class OperateExcel:
                 "method": sheet.cell(i, 3).value,
                 "header": sheet.cell(i, 4).value,
                 "url":sheet.cell(i,5).value,
-                "data": sheet.cell(i, 6).value,
-                "check_result":sheet.cell(i, 7).value}
+                "sql": sheet.cell(i, 6).value,
+                "sql_check": sheet.cell(i, 7).value,
+                "data": sheet.cell(i, 8).value,
+                "check_result":sheet.cell(i, 9).value}
             if sub_data["case_id"] is None:
                 break
             else:
@@ -40,8 +42,8 @@ class OperateExcel:
     def write_excel_data(self,i, result, Test_result):
         wb  = load_workbook(self.file_path)
         sheet = wb[self.sheet_name]
-        sheet.cell(i, 8).value = result
-        sheet.cell(i, 9).value = Test_result
+        sheet.cell(i, 10).value = result
+        sheet.cell(i, 11).value = Test_result
         wb.save(filename=self.file_path)
         wb.close()
 
