@@ -2,7 +2,7 @@ import json
 import random
 import re
 from jsonpath_rw import parse
-
+from utils.settings import real_operator_id
 
 def deal_with_rely(data, response):
     """正则匹配"""
@@ -13,7 +13,10 @@ def deal_with_rely(data, response):
         res_json = response[int(case_id)]
         value = extract_json(res_json, path)
         data = pattern.sub(str(value), data, 1)
-    return json.loads(data)            # 返回的dict
+    data = json.loads(data)
+    if "real_operator_id" in data:
+        data["real_operator_id"] = real_operator_id
+    return  data        # 返回的dict
 
 
 def extract_json(data, path):

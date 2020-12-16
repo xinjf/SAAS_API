@@ -9,7 +9,7 @@ LOG_PATH = os.path.join(REPORT_PATH,"logs")
 
 operator_url = "http://staff.backend.qa-saas.heroera.com"
 db_path = "qa_db"
-real_operator_id = 20
+real_operator_id = "20"
 mobile = "18884129577"
 password = "18884129577"
 # 预发布环境
