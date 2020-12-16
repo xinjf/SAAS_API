@@ -6,35 +6,23 @@ from utils.http_requests import http_requests
 from utils.settings import *
 import datetime
 
-# def get_token():
-#     if getattr(ParamsDispose,"token") is None:
-#         data = {"mobile": str(mobile), "password":str(password), "real_operator_id": real_operator_id}
-#         url = operator_url + '/api/common/login'
-#         res = http_requests(url,"post",data)
-#         try:
-#             setattr(ParamsDispose, "token", "bearer" + " " + res["data"]["staff"]["token"])
-#         except ValueError as e:
-#             print("获取token失败：{}".format(e))
-#         return getattr(ParamsDispose,"token")
-#     else:
-#         return getattr(ParamsDispose,"token")
-
 
 class LoginSet:
 
     def create_token(self):
-        data = {"mobile": str(mobile), "password": str(password), "real_operator_id": real_operator_id}
+        staff["real_operator_id"] =real_operator_id
         url = operator_url + '/api/common/login'
-        res = http_requests(url, "post", data)
+        res = http_requests(url, "post", staff)
         token = "bearer" + " " + res["data"]["staff"]["token"]
         nowtime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        OperateIni().ini_write_value("AM_token.ini", "token", "token", token)
-        OperateIni().ini_write_value("AM_token.ini", "token", "time", nowtime)
+        OperateIni("AM_token.ini").ini_write_value( "token", "token", token)
+        OperateIni("AM_token.ini").ini_write_value("token", "time", nowtime)
         return token
 
     def get_token(self):
-        token = OperateIni().ini_get_token()["token"]
-        start_time = OperateIni().ini_get_token()["time"]
+        token_all = OperateIni("AM_token.ini").ini_read_items("token")
+        token = token_all["token"]
+        start_time = token_all["time"]
         end_time = (datetime.datetime.now() - datetime.timedelta(minutes=5)).strftime("%Y-%m-%d %H:%M:%S")
         if token != "":
             if start_time > end_time :
@@ -63,6 +51,4 @@ class LoginSet:
         cookie = requests.utils.dict_from_cookiejar(cookie_jar)
         warnings.simplefilter("ignore", ResourceWarning)
         return cookie
-
-
 

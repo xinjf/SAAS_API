@@ -4,6 +4,7 @@ import re
 from jsonpath_rw import parse
 from utils.settings import real_operator_id
 
+
 def deal_with_rely(data, response):
     """正则匹配"""
     pattern = re.compile(r"\$\{(.+?)}")
