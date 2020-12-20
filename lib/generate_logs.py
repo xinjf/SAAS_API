@@ -12,7 +12,7 @@ def __console(level, message):
         logname = os.path.join(LOG_PATH, '%s.log' % time.strftime('%Y_%m_%d'))
         logger = logging.getLogger()
         logger.setLevel(logging.DEBUG)
-        formatter = logging.Formatter('[%(asctime)s] - %(pathname)s] - %(levelname)s: %(message)s')
+        formatter = logging.Formatter('[%(asctime)s] -%(levelname)s: %(message)s') #  %(pathname)s] -
         fh = logging.FileHandler(logname, 'a', encoding='utf-8')
         fh.setLevel(logging.DEBUG)
         fh.setFormatter(formatter)
