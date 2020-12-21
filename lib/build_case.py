@@ -30,10 +30,13 @@ def build_case():
                     case_list.append(py_file_name)
                     create_case_path = filepath.replace("data", "case", 1)
                 if os.path.exists(create_case_path) is False:
-                    os.mkdir(create_case_path)
+                    os.makedirs(create_case_path)
+                    fd = open(os.path.join(create_case_path, "__init__.py"), "wb+")
+                    fd.close()
                 with open(os.path.join(create_case_path, py_file_name), 'w', encoding='utf-8') as py_file:
                     py_file.write(py_content)
     return case_list
 
 
 
+print(build_case())

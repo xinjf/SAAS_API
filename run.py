@@ -18,6 +18,7 @@ sys.path.append(OBJ_PATH)
 info("-----------生成测试用例--------------")
 info("生成测试用例列表：{}".format(build_case()))
 
+
 info("-------- 开始执行用例----------------")
 generate_htmlreport().run(choose_all_cases(["AssetManagement"], "test*.py"))      # 执行用例
 
