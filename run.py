@@ -15,7 +15,7 @@ OBJ_PATH = os.path.dirname(
 sys.path.append(OBJ_PATH)
 
 
-
+info("-----------生成测试用例--------------")
 info("生成测试用例列表：{}".format(build_case()))
 
 
