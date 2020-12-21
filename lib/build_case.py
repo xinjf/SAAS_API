@@ -39,4 +39,3 @@ def build_case():
 
 
 
-print(build_case())
