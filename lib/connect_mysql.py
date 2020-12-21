@@ -1,5 +1,5 @@
-import pymysql
-
+import MySQLdb
+import MySQLdb.cursors
 from lib.generate_logs import info
 from utils.operate_config import OperateIni
 from utils.settings import db_path
@@ -11,7 +11,13 @@ def connect_mysql(sql):
     db_name: 数据库名称
     sql： 需要执行的sql语句"""
     config = OperateIni("db.ini").ini_read_items(db_path)
-    db = pymysql.connect(config["host"], config["user"], config["password"])
+    db = MySQLdb.connect(
+        host = config["host"],
+        user=config["user"],
+        passwd=config["password"],
+        port = 3306,
+        charset="utf8",
+        cursorclass = MySQLdb.cursors.DictCursor)
     cursor = db.cursor()
     try:
         cursor.execute(sql)
@@ -22,4 +28,6 @@ def connect_mysql(sql):
     db.close()
     return data
 
-# print(connect_mysql("SELECT * from saas_iot.device"))
+# print(connect_mysql("SELECT * from saas_operator.firm where real_operator_id = 20" )[0]["name"])
+
+

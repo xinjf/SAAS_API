@@ -20,19 +20,19 @@ class Test_AddFirm(unittest.TestCase):
     @data(*excel_data)
     def test_01(self,item):
         print("当前执行的测试用例是：{}".format(item["detail"]))
-        # 判断随机数
+
         data = RandomParams().build_random_params(item["data"])
 
         data = deal_with_rely(data, self.response)
 
         res = http_requests(url=item["url"], data=data, method=item["method"],token=self.g["token"])
-
         self.response[item["case_id"]] = res
 
         try:
             self.assertEqual(item["check_result"]['code'], res["code"])
             Test_result = "PASS"
         except AssertionError as e:
+            print("断言错误：{}".format(e))
             Test_result = "Fail"
             raise e
         finally:
