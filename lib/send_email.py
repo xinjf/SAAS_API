@@ -25,7 +25,7 @@ class SendNewMail:
 
     @classmethod
     def send_mail_html(cls, file):
-        email = OperateIni().ini_read_items("email.ini", "email")
+        email = OperateIni("email.ini").ini_read_items( "email")
         sender = email["sender"]  # 发送邮箱账号
         receiver = email["receiver"]     # 接收邮箱账号
         t = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())  # 获取2019-05-31 18:08:39格式的时间戳

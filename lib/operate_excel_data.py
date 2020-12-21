@@ -1,5 +1,5 @@
 from openpyxl import load_workbook
-from utils.settings import DATA_PATH, operator_url
+from utils.settings import BASE_PATH, operator_url
 
 
 class OperateExcel:
@@ -8,7 +8,7 @@ class OperateExcel:
     sheet_name: 读取的excel的sheet栏[-
     """
     def __init__(self, file_name=None, sheet_name = None):
-        self.file_path =  file_name
+        self.file_path =  BASE_PATH+file_name
         self.sheet_name = sheet_name
 
     def read_excel_data(self):
@@ -24,7 +24,9 @@ class OperateExcel:
                 "header": sheet.cell(i, 4).value,
                 "url":sheet.cell(i,5).value,
                 "data": sheet.cell(i, 6).value,
-                "check_result":sheet.cell(i, 7).value}
+                "sql": sheet.cell(i, 7).value,
+                "sql_check": sheet.cell(i, 8).value,
+                "check_result":sheet.cell(i, 9).value}
             if sub_data["case_id"] is None:
                 break
             else:
@@ -40,8 +42,8 @@ class OperateExcel:
     def write_excel_data(self,i, result, Test_result):
         wb  = load_workbook(self.file_path)
         sheet = wb[self.sheet_name]
-        sheet.cell(i, 8).value = result
-        sheet.cell(i, 9).value = Test_result
+        sheet.cell(i, 10).value = result
+        sheet.cell(i, 11).value = Test_result
         wb.save(filename=self.file_path)
         wb.close()
 
@@ -51,10 +53,6 @@ class OperateExcel:
         return  sheet_list
 
 
-
-
-if __name__=="__main__":
-    print(OperateExcel('C:\\Users\\pujun\\Desktop\\APIAuto_unittest\\test_data\\AssetManagement\\firm\\firm.xlsx').get_excel_sheet())
 
 
 
