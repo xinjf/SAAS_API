@@ -5,6 +5,7 @@ from utils.http_requests import http_requests
 from ddt import ddt,data
 from utils.login_set import LoginSet
 from utils.ramdom_params import RandomParams
+from lib.generate_logs import info
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="FirmList").read_excel_data()
 
@@ -19,7 +20,7 @@ class Test_FirmList(unittest.TestCase):
 
     @data(*excel_data)
     def test_01(self,item):
-        print("当前执行的测试用例是：{}".format(item["detail"]))
+        info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = RandomParams().build_random_params(item["data"])
 
@@ -41,3 +42,4 @@ class Test_FirmList(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

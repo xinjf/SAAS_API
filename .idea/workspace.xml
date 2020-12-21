@@ -7,7 +7,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/AM_token.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/AM_token.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/build_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build_case.py" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/lib/choose_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/choose_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/logs/2020_12_21.log" beforeDir="false" afterPath="$PROJECT_DIR$/report/logs/2020_12_21.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/AssetManagement/login/test_login.py" beforeDir="false" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
       <change beforePath="$PROJECT_DIR$/test_case/Base_case.text" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/Base_case.text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_data/AssetManagement/firm/firm.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/AssetManagement/firm/firm.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_data/AssetManagement/login/login.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/AssetManagement/login/login.xlsx" afterDir="false" />
@@ -19,6 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_firmlist_py.coverage" NAME="Unittests in test_firmlist.py Coverage Results" MODIFIED="1608046683575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
     <SUITE FILE_PATH="coverage/SAAS_API$params_dispose.coverage" NAME="params_dispose Coverage Results" MODIFIED="1608007852406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_addfirm_py.coverage" NAME="Unittests in test_addfirm.py Coverage Results" MODIFIED="1608447427623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
@@ -31,6 +41,21 @@
     <SUITE FILE_PATH="coverage/SAAS_API$ramdom_params.coverage" NAME="ramdom_params Coverage Results" MODIFIED="1608094933294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1608439813454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/login" />
     <SUITE FILE_PATH="coverage/SAAS_API$run.coverage" NAME="run Coverage Results" MODIFIED="1608473967952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <SUITE FILE_PATH="coverage/SAAS_API$ramdom_params.coverage" NAME="ramdom_params Coverage Results" MODIFIED="1608094933294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/SAAS_API$params_dispose.coverage" NAME="params_dispose Coverage Results" MODIFIED="1608007852406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/SAAS_API$connect_mysql.coverage" NAME="connect_mysql Coverage Results" MODIFIED="1608268679966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/SAAS_API$dispose_params.coverage" NAME="dispose_params Coverage Results" MODIFIED="1608095794750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/SAAS_API$login_set.coverage" NAME="login_set Coverage Results" MODIFIED="1608133139648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/SAAS_API$operate_config.coverage" NAME="operate_config Coverage Results" MODIFIED="1608132171220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1608544621631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/login" />
+    <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_firmlist_py.coverage" NAME="Unittests in test_firmlist.py Coverage Results" MODIFIED="1608268689824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
+    <SUITE FILE_PATH="coverage/SAAS_API$operate_excel_data.coverage" NAME="operate_excel_data Coverage Results" MODIFIED="1608044315096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_addfirm_py.coverage" NAME="Unittests in test_addfirm.py Coverage Results" MODIFIED="1608130691743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
+    <SUITE FILE_PATH="coverage/SAAS_API$run.coverage" NAME="run Coverage Results" MODIFIED="1608547016439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SAAS_API$choose_case.coverage" NAME="choose_case Coverage Results" MODIFIED="1608547887648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/SAAS_API$build_case.coverage" NAME="build_case Coverage Results" MODIFIED="1608544488736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -48,6 +73,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/Base_case.text">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,12 +90,22 @@
               <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/build_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/utils/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -106,16 +142,32 @@
               <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/build_case.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="558">
               <caret line="31" selection-start-line="31" selection-end-line="34" selection-end-column="50" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/operate_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -124,12 +176,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/lib/generate_logs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+=======
+        <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/choose_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,7 +223,6 @@
       <list>
         <option value="$PROJECT_DIR$/lib/delete_expired_files.py" />
         <option value="$PROJECT_DIR$/lib/send_dingding.py" />
-        <option value="$PROJECT_DIR$/lib/send_email.py" />
         <option value="$PROJECT_DIR$/config/token_pre.ini" />
         <option value="$PROJECT_DIR$/demand.md" />
         <option value="$PROJECT_DIR$/utils/get_token.py" />
@@ -161,11 +231,15 @@
         <option value="$PROJECT_DIR$/utils/params_dispose.py" />
         <option value="$PROJECT_DIR$/lib/operate_excel_data.py" />
         <option value="$PROJECT_DIR$/utils/dispose_response.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py" />
+=======
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
         <option value="$PROJECT_DIR$/utils/ramdom_params.py" />
         <option value="$PROJECT_DIR$/utils/dispose_params.py" />
         <option value="$PROJECT_DIR$/utils/http_requests.py" />
         <option value="$PROJECT_DIR$/demand.text" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/utils/settings.py" />
         <option value="$PROJECT_DIR$/config/db.ini" />
         <option value="$PROJECT_DIR$/utils/operate_config.py" />
@@ -176,15 +250,38 @@
         <option value="$PROJECT_DIR$/test_case/AssetManagement/login/test_login.py" />
         <option value="$PROJECT_DIR$/lib/choose_case.py" />
         <option value="$PROJECT_DIR$/run.py" />
+=======
+        <option value="$PROJECT_DIR$/config/db.ini" />
+        <option value="$PROJECT_DIR$/lib/send_email.py" />
+        <option value="$PROJECT_DIR$/utils/login_set.py" />
+        <option value="$PROJECT_DIR$/utils/settings.py" />
+        <option value="$PROJECT_DIR$/utils/operate_config.py" />
+        <option value="$PROJECT_DIR$/lib/connect_mysql.py" />
+        <option value="$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py" />
+        <option value="$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py" />
+        <option value="$PROJECT_DIR$/lib/generate_logs.py" />
+        <option value="$PROJECT_DIR$/test_case/AssetManagement/login/test_login.py" />
+        <option value="$PROJECT_DIR$/test_case/Base_case.text" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/lib/choose_case.py" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
         <option value="$PROJECT_DIR$/lib/build_case.py" />
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="151" />
     <option name="y" value="31" />
+=======
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1926" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
     <option name="width" value="1700" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -214,6 +311,7 @@
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
               <item name="AssetManagement" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
               <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
@@ -244,6 +342,8 @@
               <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
           </expand>
           <select />
         </subPane>
@@ -259,11 +359,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pujun\Desktop\SAAS_API\config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pujun\Desktop\SAAS_API\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pujun\Desktop\SAAS_API\test_case" />
+      <recent name="C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\login" />
+      <recent name="C:\Users\pujun\Desktop\SAAS_API\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,7 +380,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.run">
+=======
+  <component name="RunManager" selected="Python.choose_case">
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
     <configuration name="build_case" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SAAS_API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -345,7 +451,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="Unittests in test_addfirm.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="Unittests in test_firmlist.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
       <module name="SAAS_API" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -356,7 +466,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py&quot;" />
+=======
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py&quot;" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -377,11 +491,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.run" />
         <item itemvalue="Python.choose_case" />
         <item itemvalue="Python.build_case" />
         <item itemvalue="Python tests.Unittests in test_addfirm.py" />
         <item itemvalue="Python tests.Unittests in test_login.py" />
+=======
+        <item itemvalue="Python.choose_case" />
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Unittests in test_login.py" />
+        <item itemvalue="Python.build_case" />
+        <item itemvalue="Python tests.Unittests in test_firmlist.py" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
       </list>
     </recent_temporary>
   </component>
@@ -413,12 +535,23 @@
       <workItem from="1608007062811" duration="3064000" />
       <workItem from="1608039586318" duration="5320000" />
       <workItem from="1608093655504" duration="4037000" />
+<<<<<<< HEAD
       <workItem from="1608129577648" duration="3196000" />
       <workItem from="1608436420569" duration="4295000" />
+=======
+      <workItem from="1608129577648" duration="3667000" />
+      <workItem from="1608180110979" duration="2556000" />
+      <workItem from="1608187473052" duration="1201000" />
+      <workItem from="1608265995169" duration="2715000" />
+      <workItem from="1608517410067" duration="2212000" />
+      <workItem from="1608525388154" duration="213000" />
+      <workItem from="1608542965777" duration="5601000" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="Unittests_in_test_addfirm_py - 2020.12.16 at 13h 17m 26s.xml">
       <configuration name="Unittests in test_addfirm.py" configurationId="tests" />
     </history-entry>
@@ -457,11 +590,55 @@
     <frame x="151" y="31" width="1700" height="1056" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30792683" />
+=======
+    <history-entry file="Unittests_in_test_firmlist_py - 2020.12.18 at 13h 09m 53s.xml">
+      <configuration name="Unittests in test_firmlist.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_firmlist_py - 2020.12.18 at 13h 10m 59s.xml">
+      <configuration name="Unittests in test_firmlist.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_firmlist_py - 2020.12.18 at 13h 11m 08s.xml">
+      <configuration name="Unittests in test_firmlist.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_firmlist_py - 2020.12.18 at 13h 11m 56s.xml">
+      <configuration name="Unittests in test_firmlist.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_firmlist_py - 2020.12.18 at 13h 16m 36s.xml">
+      <configuration name="Unittests in test_firmlist.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_firmlist_py - 2020.12.18 at 13h 17m 11s.xml">
+      <configuration name="Unittests in test_firmlist.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_firmlist_py - 2020.12.18 at 13h 18m 13s.xml">
+      <configuration name="Unittests in test_firmlist.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2020.12.21 at 12h 07m 44s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2020.12.21 at 17h 49m 12s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2020.12.21 at 17h 57m 09s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="58132000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1926" y="0" width="1700" height="1056" extended-state="1" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32560974" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.52060735" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29718006" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -470,22 +647,47 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.2407809" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.30260304" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28464818" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4273319" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.30260304" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firm_list.py" />
     <entry file="file://$PROJECT_DIR$/lib/log.py" />
     <entry file="file://$PROJECT_DIR$/lib/login_set.py" />
@@ -495,6 +697,7 @@
     <entry file="file://$PROJECT_DIR$/utils/result_assert.py" />
     <entry file="file://$PROJECT_DIR$/lib/http_requests.py" />
     <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firm_add.py" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/send_email.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -504,6 +707,10 @@
           </folding>
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/package/htmltestrunner.py">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/send_dingding.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -512,16 +719,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/logs/2020_12_12.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/report/2020_12_12-15_51_07_report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/logs/2020_12_12.log" />
+    <entry file="file://$PROJECT_DIR$/report/report/2020_12_12-15_51_07_report.html" />
     <entry file="file://$PROJECT_DIR$/config/token.ini" />
     <entry file="file://$PROJECT_DIR$/config/token_pre.ini" />
     <entry file="file://$PROJECT_DIR$/demand.md" />
@@ -580,6 +779,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -596,12 +796,28 @@
           <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+=======
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2003984509/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="258" column="4" selection-start-line="258" selection-start-column="4" selection-end-line="258" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/operate_excel_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generate_htmlreport.py">
+    <entry file="file://$PROJECT_DIR$/utils/ramdom_params.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="54">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
@@ -618,15 +834,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/ramdom_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+=======
+        <state relative-caret-position="297">
           <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding>
             <element signature="e#13#24#0" expanded="true" />
@@ -634,6 +843,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/AM_token.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/send_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/utils/ramdom_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#13#24#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/utils/dispose_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/utils/dispose_params.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -670,34 +917,113 @@
           <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/config/db.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/configparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="848" selection-start-line="848" selection-end-line="848" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/logs/2020_12_17.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demand.text">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/http_requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/package/htmltestrunner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="622" selection-start-line="622" selection-end-line="622" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/connect_mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/login_set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="17" column="76" lean-forward="true" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-44">
+=======
+        <state relative-caret-position="44">
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/choose_case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/generate_htmlreport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generate_logs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="14" column="103" selection-start-line="14" selection-start-column="103" selection-end-line="14" selection-end-column="103" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/test_case/Base_case.text">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -709,12 +1035,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+=======
+    <entry file="file://$PROJECT_DIR$/report/logs/2020_12_21.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/login/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/Base_case.text">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="247" column="77" lean-forward="true" selection-start-line="247" selection-start-column="77" selection-end-line="247" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/login/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/demand.text">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -726,13 +1102,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+=======
+    <entry file="file://$PROJECT_DIR$/utils/operate_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/choose_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/build_case.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="558">
           <caret line="31" selection-start-line="31" selection-end-line="34" selection-end-column="50" />
+=======
+        <state relative-caret-position="722">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+>>>>>>> 7e274dd19eb8f7319c2b3d5f13e91c18fbc33a4c
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

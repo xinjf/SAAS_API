@@ -125,9 +125,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 冯馨剑</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-12-14 19:26:37</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.138635</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 4，错误 4，通过率= 0.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-12-21 12:00:57</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.009973</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 2，错误 2，通过率= 0.00%</p>
 
 <p class='description'>用例执行情况:</p>
 </div>
@@ -137,9 +137,9 @@ function html_escape(s) {
     <p id='show_detail_line'>
     <a class="btn btn-primary" href='javascript:showCase(0)'>通过率 [0.00% ]</a>
     <a class="btn btn-success" href='javascript:showCase(2)'>通过[ 0 ]</a>
-    <a class="btn btn-warning" href='javascript:showCase(3)'>错误[ 4 ]</a>
+    <a class="btn btn-warning" href='javascript:showCase(3)'>错误[ 2 ]</a>
     <a class="btn btn-danger" href='javascript:showCase(1)'>失败[ 0 ]</a>
-    <a class="btn btn-info" href='javascript:showCase(4)'>所有[ 4 ]</a>
+    <a class="btn btn-info" href='javascript:showCase(4)'>所有[ 2 ]</a>
     </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -161,11 +161,11 @@ function html_escape(s) {
 
 <tr class='errorClass warning'>
     <td>unittest.loader._FailedTest</td>
-    <td class="text-center">4</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
-    <td class="text-center">4</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>详细</a></td>
 </tr>
 
 <tr id='ft1_1' class='none'>
@@ -186,10 +186,9 @@ Traceback (most recent call last):
     module = self._get_module_from_name(name)
   File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
     __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\firm\test_addfirm.py", line 15
-    cls.response = {}cls.g= globals()
-                     ^
-SyntaxError: invalid syntax
+  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\firm\test_addfirm.py", line 3, in &lt;module&gt;
+    from utils.dispose_response import deal_with_rely
+ModuleNotFoundError: No module named 'utils.dispose_response'
 
 
 
@@ -199,7 +198,7 @@ SyntaxError: invalid syntax
 </tr>
 
 <tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_deletefirm</div></td>
+    <td class='errorCase'><div class='testcase'>test_firmlist</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_2'>错误</button>
@@ -210,75 +209,15 @@ SyntaxError: invalid syntax
     <div id='div_ft1_2' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
     <pre>
     
-ft1_2: ImportError: Failed to import test module: firm.test_deletefirm
+ft1_2: ImportError: Failed to import test module: firm.test_firmlist
 Traceback (most recent call last):
   File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
     module = self._get_module_from_name(name)
   File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
     __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\firm\test_deletefirm.py", line 7, in &lt;module&gt;
-    from utils.login_set import get_token
-ImportError: cannot import name 'get_token' from 'utils.login_set' (C:\Users\pujun\Desktop\SAAS_API\utils\login_set.py)
-
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_firmlist</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse">  -->
-
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_3'>错误</button>
-    <div id='div_ft1_3' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
-    <pre>
-    
-ft1_3: ImportError: Failed to import test module: firm.test_firmlist
-Traceback (most recent call last):
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\firm\test_firmlist.py", line 15
-    cls.response = {}cls.g= globals()
-                     ^
-SyntaxError: invalid syntax
-
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse">  -->
-
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
-    <pre>
-    
-ft1_4: ImportError: Failed to import test module: login.test_login
-Traceback (most recent call last):
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\login\test_login.py", line 15
-    cls.response = {}cls.g= globals()
-                     ^
-SyntaxError: invalid syntax
+  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\firm\test_firmlist.py", line 3, in &lt;module&gt;
+    from utils.dispose_response import deal_with_rely
+ModuleNotFoundError: No module named 'utils.dispose_response'
 
 
 
@@ -289,9 +228,9 @@ SyntaxError: invalid syntax
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>4</td>
+    <td>2</td>
     <td>0</td>
-    <td>4</td>
+    <td>2</td>
     <td>0</td>
     <td>通过率：0.00%</td>
 </tr>
