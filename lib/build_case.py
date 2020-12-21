@@ -36,7 +36,3 @@ def build_case():
                 with open(os.path.join(create_case_path, py_file_name), 'w', encoding='utf-8') as py_file:
                     py_file.write(py_content)
     return case_list
-
-
-
-print(build_case())
