@@ -4,14 +4,6 @@
     <list default="true" id="751a3710-173c-4d04-8286-f6efa5ff76ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/AM_token.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/AM_token.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/choose_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/choose_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/logs/2020_12_21.log" beforeDir="false" afterPath="$PROJECT_DIR$/report/logs/2020_12_21.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/AssetManagement/login/test_login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/Base_case.text" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/Base_case.text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_data/AssetManagement/firm/firm.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/AssetManagement/firm/firm.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_data/AssetManagement/login/login.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/AssetManagement/login/login.xlsx" afterDir="false" />
     </list>
@@ -32,7 +24,7 @@
     <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_firmlist_py.coverage" NAME="Unittests in test_firmlist.py Coverage Results" MODIFIED="1608268689824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
     <SUITE FILE_PATH="coverage/SAAS_API$operate_excel_data.coverage" NAME="operate_excel_data Coverage Results" MODIFIED="1608044315096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
     <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_addfirm_py.coverage" NAME="Unittests in test_addfirm.py Coverage Results" MODIFIED="1608130691743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
-    <SUITE FILE_PATH="coverage/SAAS_API$run.coverage" NAME="run Coverage Results" MODIFIED="1608547016439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SAAS_API$run.coverage" NAME="run Coverage Results" MODIFIED="1608630860642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SAAS_API$choose_case.coverage" NAME="choose_case Coverage Results" MODIFIED="1608547887648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
     <SUITE FILE_PATH="coverage/SAAS_API$build_case.coverage" NAME="build_case Coverage Results" MODIFIED="1608544488736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
   </component>
@@ -53,60 +45,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/build_case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="462">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/operate_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/choose_case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,9 +103,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1926" />
+    <option name="x" value="119" />
+    <option name="y" value="12" />
     <option name="width" value="1700" />
-    <option name="height" value="1056" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -171,17 +116,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
               <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
@@ -194,11 +135,42 @@
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
               <item name="AssetManagement" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="AssetManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="firm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
+              <item name="AssetManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
+              <item name="AssetManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="firm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
+              <item name="AssetManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,13 +181,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pujun\Desktop\SAAS_API\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pujun\Desktop\SAAS_API\test_case" />
       <recent name="C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\login" />
       <recent name="C:\Users\pujun\Desktop\SAAS_API\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pujun\Desktop\SAAS_API\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -230,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.choose_case">
+  <component name="RunManager" selected="Python.run">
     <configuration name="build_case" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SAAS_API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -329,8 +301,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.choose_case" />
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.choose_case" />
         <item itemvalue="Python tests.Unittests in test_login.py" />
         <item itemvalue="Python.build_case" />
         <item itemvalue="Python tests.Unittests in test_firmlist.py" />
@@ -372,6 +344,7 @@
       <workItem from="1608517410067" duration="2212000" />
       <workItem from="1608525388154" duration="213000" />
       <workItem from="1608542965777" duration="5601000" />
+      <workItem from="1608630688098" duration="257000" />
     </task>
     <servers />
   </component>
@@ -408,17 +381,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58132000" />
+    <option name="totallyTimeSpent" value="59196000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1926" y="0" width="1700" height="1056" extended-state="1" />
+    <frame x="119" y="12" width="1700" height="1047" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32560974" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33414635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29718006" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42497262" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -427,7 +400,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.30260304" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3023001" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -493,22 +466,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/delete_expired_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demand.md" />
     <entry file="file://$PROJECT_DIR$/utils/get_token.py" />
-    <entry file="file://$PROJECT_DIR$/lib/operate_yaml_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_deletefirm.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/string.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -541,13 +500,6 @@
           <folding>
             <element signature="e#13#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/AM_token.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -690,29 +642,40 @@
     <entry file="file://$PROJECT_DIR$/test_case/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$PROJECT_DIR$/lib/delete_expired_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        <state relative-caret-position="-66">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/build_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py">
+    <entry file="file://$PROJECT_DIR$/config/AM_token.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/operate_yaml_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/operate_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="176">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -720,9 +683,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/choose_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="396">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -730,12 +703,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/build_case.py">
+    <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="462">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
