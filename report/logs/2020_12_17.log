@@ -1,2 +1,0 @@
-[2020-12-17 13:00:28,203] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: sql语句执行失败：SELECT * from saas_iot.devic
-[2020-12-17 13:01:16,772] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: sql语句执行失败：(1146, "Table 'saas_iot.devic' doesn't exist")
