@@ -42,4 +42,3 @@ class Test_FirmList(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
