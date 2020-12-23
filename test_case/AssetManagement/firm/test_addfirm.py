@@ -1,11 +1,11 @@
 import unittest
-from ddt import ddt,data
-from lib.generate_logs import info
 from lib.operate_excel_data import OperateExcel
 from utils.dispose_params import deal_with_rely
 from utils.http_requests import http_requests
+from ddt import ddt,data
 from utils.login_set import LoginSet
 from utils.ramdom_params import RandomParams
+from lib.generate_logs import info
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").read_excel_data()
 
@@ -38,8 +38,9 @@ class Test_AddFirm(unittest.TestCase):
             raise e
         finally:
             OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx",
-                         sheet_name="AddFirm").write_excel_data(item["case_id"] + 1, str(res), test_result)
+                        sheet_name="AddFirm").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':
     unittest.main()
+
