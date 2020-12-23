@@ -9,7 +9,7 @@ if not os.path.exists(LOG_PATH):
 
 
 def __console(level, message):
-        logname = os.path.join(LOG_PATH, '%s.log' % time.strftime('%Y_%m_%d'))
+        logname = os.path.join(LOG_PATH, '%s.logs' % time.strftime('%Y_%m_%d'))
         logger = logging.getLogger()
         logger.setLevel(logging.DEBUG)
         formatter = logging.Formatter('[%(asctime)s] -%(levelname)s: %(message)s') #  %(pathname)s] -

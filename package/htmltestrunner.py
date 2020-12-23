@@ -98,7 +98,7 @@ Version in 0.8.0
 
 Version in 0.7.1
 * Back port to Python 2.3 (Frank Horowitz).
-* Fix missing scroll bars in detail log (Podi).
+* Fix missing scroll bars in detail logs (Podi).
 """
 
 # TODO: color stderr
@@ -244,7 +244,7 @@ function showCase(level) {
 
     //加入【详细】切换文字变化 --Findyou
     detail_class=document.getElementsByClassName('detail');
-    //console.log(detail_class.length)
+    //console.logs(detail_class.length)
     if (level == 3) {
         for (var i = 0; i < detail_class.length; i++){
             detail_class[i].innerHTML="收起"

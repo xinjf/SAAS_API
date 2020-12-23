@@ -38,7 +38,7 @@ class Test_AddFirm(unittest.TestCase):
             raise e
         finally:
             OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx",
-                         sheet_name="AddFirm").write_excel_data(item["case_id"] + 1, str(res), test_result)
+                        sheet_name="AddFirm").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':
