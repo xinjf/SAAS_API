@@ -1,1 +1,0 @@
-[2020-12-18 12:40:53,518] - C:\Users\pujun\Desktop\SAAS_API\lib\generate_logs.py] - INFO: sql语句执行失败：(1146, "Table 'saas_oprerator.firm' doesn't exist")

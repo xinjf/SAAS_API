@@ -17,11 +17,8 @@ sys.path.append(OBJ_PATH)
 
 info("-----------生成测试用例--------------")
 info("生成测试用例列表：{}".format(build_case()))
-
-
 info("-------- 开始执行用例----------------")
 generate_htmlreport().run(choose_all_cases(["AssetManagement"], "test*.py"))      # 执行用例
-
 info("-------接口测试流程测试完成----------")
 info("删除过期的报告:{}".format(delete_expired_files()))              # 删除过期文件
 

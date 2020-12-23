@@ -15,7 +15,7 @@ class %(class_name)s(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.response = {}
-        cls.g= globals()
+        cls.g = globals()
         cls.g["token"] = LoginSet().get_token()
 
     @data(*excel_data)
@@ -31,13 +31,14 @@ class %(class_name)s(unittest.TestCase):
 
         try:
             self.assertEqual(item["check_result"]['code'], res["code"])
-            Test_result = "PASS"
+            test_result = "PASS"
         except AssertionError as e:
             print("断言错误：{}".format(e))
-            Test_result = "Fail"
+            test_result = "Fail"
             raise e
         finally:
-            OperateExcel(r"%(case_path)s", sheet_name="%(sheet_name)s").write_excel_data(item["case_id"] + 1,str(res),Test_result)
+            OperateExcel(r"%(case_path)s",
+                        sheet_name="%(sheet_name)s").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':
