@@ -194,8 +194,8 @@ class Template_mixin(object):
 
     # ------------------------------------------------------------------------
     # HTML Template
-
-    HTML_TMPL = r"""<?xml version="1.0" encoding="UTF-8"?>
+    # <?xml version="1.0" encoding="UTF-8"?>
+    HTML_TMPL = r"""
 <!DOCTYPE report PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <report xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -379,12 +379,12 @@ table       { font-size: 100%; }
 <col align='right' />
 </colgroup>
 <tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
-    <td>用例集/测试用例</td>
-    <td>总计</td>
-    <td>通过</td>
-    <td>错误</td>
-    <td>失败</td>
-    <td>详细</td>
+    <td>用例集/测试用例            </td>
+    <td>总计    </td>
+    <td>通过    </td>
+    <td>错误    </td>
+    <td>失败    </td>
+    <td>详细    </td>
 </tr>
 %(test_list)s
 <tr id='total_row' class="text-center active">

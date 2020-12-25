@@ -5,13 +5,12 @@ from email.mime.text import MIMEText
 from email.header import Header
 from lib.generate_logs import info
 from utils.operate_config import OperateIni
-# from lib.settings import report_path
+from utils.settings import HTML_PATH
 
 
 class SendNewMail:
     """发送邮件"""
-    @classmethod
-    def find_new_file(cls, file):
+    def find_new_file(self, file):
         file_lists = os.listdir(file)
         try:
             file_lists.sort(key=lambda fn: os.path.getmtime(
@@ -23,8 +22,10 @@ class SendNewMail:
         except Exception as error:
             info(error)
 
-    @classmethod
-    def send_mail_html(cls, file):
+
+    def send_mail_html(self ):
+        # file = self.find_new_file(HTML_PATH)
+        file="<a href='http://www.cnblogs.com/visec479/'>Dana、Li</a>"
         email = OperateIni("email.ini").ini_read_items( "email")
         sender = email["sender"]  # 发送邮箱账号
         receiver = email["receiver"]     # 接收邮箱账号
@@ -34,20 +35,19 @@ class SendNewMail:
         username = email["username"]    # 发送邮箱用户/密码
         password = email["password"]    # 邮箱授权码，需要邮箱设置里面获取
         mail_host = email["mail_host"]  # 设置smtp服务器
-        # print(sender, receiver, username, password, mail_host)
         with open(file, 'rb') as f:  # 读取html文件内容
-            mail_body = f.read().decode("utf-8")
-        msg = MIMEText(mail_body, _subtype = 'report', _charset = 'utf-8')
+            mail_body = f.read().decode("utf8")
+        msg = MIMEText(mail_body, _subtype = 'html')
         msg['Subject'] = Header(subject, 'utf-8')
-        msg['From'] = "冯馨剑"          # 发件人
+        msg['From'] = "冯馨剑"     # 发件人
         msg['To'] = receiver            # 接收人
         try:
             smtp = smtplib.SMTP()
             smtp.connect(mail_host, 25)
             smtp.login(username, password)
-            smtp.sendmail(sender, receiver, msg.as_bytes())
+            smtp.sendmail(sender, receiver, msg.as_string())
             info("邮件已发送到：{}的邮箱！".format(receiver))
         except smtplib.SMTPException:
             info("邮件发送失败！")
 
-
+SendNewMail().send_mail_html()
