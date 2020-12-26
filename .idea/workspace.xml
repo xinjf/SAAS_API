@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="751a3710-173c-4d04-8286-f6efa5ff76ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generate_htmlreport.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generate_htmlreport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/xxx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/AssetManagement/firm/firm1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/接口测试.py" beforeDir="false" afterPath="$PROJECT_DIR$/接口测试.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +26,7 @@
     <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_firmlist_py.coverage" NAME="Unittests in test_firmlist.py Coverage Results" MODIFIED="1608268689824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
     <SUITE FILE_PATH="coverage/SAAS_API$operate_excel_data.coverage" NAME="operate_excel_data Coverage Results" MODIFIED="1608044315096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
     <SUITE FILE_PATH="coverage/SAAS_API$Unittests_in_test_addfirm_py.coverage" NAME="Unittests in test_addfirm.py Coverage Results" MODIFIED="1608130691743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/AssetManagement/firm" />
-    <SUITE FILE_PATH="coverage/SAAS_API$.coverage" NAME="接口测试 Coverage Results" MODIFIED="1608860564180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SAAS_API$.coverage" NAME="接口测试 Coverage Results" MODIFIED="1608892196552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SAAS_API$run.coverage" NAME="run Coverage Results" MODIFIED="1608889875478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SAAS_API$choose_case.coverage" NAME="choose_case Coverage Results" MODIFIED="1608547887648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
     <SUITE FILE_PATH="coverage/SAAS_API$build_case.coverage" NAME="build_case Coverage Results" MODIFIED="1608544488736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
@@ -43,51 +47,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generate_htmlreport.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/htmltestrunner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1628">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package/xxx.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/send_email.py">
+        <entry file="file://$PROJECT_DIR$/utils/operate_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+            <state relative-caret-position="220">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,14 +106,14 @@
         <option value="$PROJECT_DIR$/lib/choose_case.py" />
         <option value="$PROJECT_DIR$/lib/build_case.py" />
         <option value="$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py" />
-        <option value="$PROJECT_DIR$/接口测试.py" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/utils/settings.py" />
         <option value="$PROJECT_DIR$/config/email.ini" />
         <option value="$PROJECT_DIR$/package/htmltestrunner.py" />
-        <option value="$PROJECT_DIR$/lib/generate_htmlreport.py" />
         <option value="$PROJECT_DIR$/package/xxx.py" />
         <option value="$PROJECT_DIR$/lib/send_email.py" />
+        <option value="$PROJECT_DIR$/lib/generate_htmlreport.py" />
+        <option value="$PROJECT_DIR$/接口测试.py" />
       </list>
     </option>
   </component>
@@ -170,21 +136,6 @@
             <path>
               <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
               <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
-              <item name="package" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SAAS_API" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SAAS_API" type="b2602c69:ProjectViewProjectNode" />
@@ -218,7 +169,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaohongjun-wenjiang-UIautotest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -245,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.send_email">
+  <component name="RunManager" selected="Python.接口测试">
     <configuration name="接口测试" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SAAS_API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -351,9 +302,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.接口测试" />
         <item itemvalue="Python.send_email" />
         <item itemvalue="Python.run" />
-        <item itemvalue="Python.接口测试" />
         <item itemvalue="Python.choose_case" />
         <item itemvalue="Python tests.Unittests in test_login.py" />
       </list>
@@ -395,7 +346,7 @@
       <workItem from="1608525388154" duration="213000" />
       <workItem from="1608542965777" duration="5601000" />
       <workItem from="1608552233004" duration="291000" />
-      <workItem from="1608726827891" duration="13383000" />
+      <workItem from="1608726827891" duration="15930000" />
     </task>
     <servers />
   </component>
@@ -432,7 +383,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71879000" />
+    <option name="totallyTimeSpent" value="74426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="0" width="1700" height="1047" extended-state="0" />
@@ -451,7 +402,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3023001" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3023001" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -487,8 +438,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/report/report/2020_12_12-15_51_07_report.html" />
-    <entry file="file://$PROJECT_DIR$/config/token.ini" />
     <entry file="file://$PROJECT_DIR$/config/token_pre.ini" />
     <entry file="file://$PROJECT_DIR$/lib/delete_expired_files.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -592,16 +541,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/utils/operate_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_firmlist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -656,16 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/接口测试.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/AssetManagement/firm/test_addfirm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -694,16 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/ramdom_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="e#13#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,16 +679,6 @@
     <entry file="file://$PROJECT_DIR$/report/report/2020_12_25-17_50_12_report.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/report/2020_12_25-17_51_17_report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -794,10 +703,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package/xxx.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generate_htmlreport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="462">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -811,8 +723,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package/xxx.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/report/report/2020_12_23-16_09_10_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/接口测试.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/report/2020_12_23-16_12_36_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/ramdom_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#13#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/operate_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
