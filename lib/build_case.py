@@ -25,6 +25,7 @@ def build_case():
                         'file_name': file,
                         'sheet_name': sheet,
                         'class_name': class_name,
+                        'method_name':sheet
                     }
                     py_file_name = class_name.lower() + '.py'
                     case_list.append(py_file_name)
