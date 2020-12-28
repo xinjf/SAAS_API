@@ -1,4 +1,5 @@
 from openpyxl import load_workbook
+from utils.ramdom_params import RandomParams
 from utils.settings import BASE_PATH, operator_url
 
 
@@ -32,6 +33,7 @@ class OperateExcel:
             else:
                 sub_data["url"] = operator_url + sub_data["url"]
                 sub_data["check_result"] = eval(sub_data["check_result"])
+                sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
                 test_data.append(sub_data)
 
             # sub_data["url"] = operator_url + sub_data["url"]

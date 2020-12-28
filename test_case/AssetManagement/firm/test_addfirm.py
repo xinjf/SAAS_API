@@ -4,11 +4,10 @@ from utils.dispose_params import deal_with_rely
 from utils.http_requests import http_requests
 from ddt import ddt,data
 from utils.login_set import LoginSet
-from utils.ramdom_params import RandomParams
 from lib.generate_logs import info
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").read_excel_data()
-
+print(excel_data)
 @ddt
 class Test_AddFirm(unittest.TestCase):
 
@@ -22,10 +21,7 @@ class Test_AddFirm(unittest.TestCase):
     def test_01(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
-        data = RandomParams().build_random_params(item["data"])
-
-        data = deal_with_rely(data, self.response)
-
+        data = deal_with_rely(item["data"], self.response)
         res = http_requests(url=item["url"], data=data, method=item["method"],token=self.g["token"])
         self.response[item["case_id"]] = res
 
