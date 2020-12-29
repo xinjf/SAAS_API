@@ -22,14 +22,12 @@ class RandomParams:
         return  ''.join(random.sample(string.ascii_letters + string.digits, 5))
 
     def build_random_params(self,data):
-        random_str = "${random_str}"
-        random_phone = "${random_phone}"
         if isinstance(data,dict):
             data = json.dumps(data)
-        if random_str in data:
-            data = data.replace(random_str,self.random_str())
-        if random_phone in data:
-            data = data.replace(random_phone,self.random_phone())
+        if "${random_str}" in data:
+            data = data.replace("${random_str}",self.random_str())
+        if "${random_phone}" in data:
+            data = data.replace("${random_phone}",self.random_phone())
         return data
 
 
