@@ -6,10 +6,10 @@ from ddt import ddt,data
 from utils.login_set import LoginSet
 from lib.generate_logs import info
 
-excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="AddFirm").read_excel_data()
-print(excel_data)
+excel_data = OperateExcel(r"\test_data\AssetManagement\common\firm.xlsx", sheet_name="Firm").read_excel_data()
+
 @ddt
-class Test_AddFirm(unittest.TestCase):
+class Test_Firm(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -22,6 +22,7 @@ class Test_AddFirm(unittest.TestCase):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = deal_with_rely(item["data"], self.response)
+
         res = http_requests(url=item["url"], data=data, method=item["method"],token=self.g["token"])
         self.response[item["case_id"]] = res
 
@@ -33,8 +34,8 @@ class Test_AddFirm(unittest.TestCase):
             test_result = "Fail"
             raise e
         finally:
-            OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx",
-                        sheet_name="AddFirm").write_excel_data(item["case_id"] + 1,str(res),test_result)
+            OperateExcel(r"\test_data\AssetManagement\common\firm.xlsx",
+                        sheet_name="Firm").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':

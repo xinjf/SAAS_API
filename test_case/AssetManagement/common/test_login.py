@@ -6,10 +6,10 @@ from ddt import ddt,data
 from utils.login_set import LoginSet
 from lib.generate_logs import info
 
-excel_data = OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx", sheet_name="FirmList").read_excel_data()
+excel_data = OperateExcel(r"\test_data\AssetManagement\common\login.xlsx", sheet_name="login").read_excel_data()
 
 @ddt
-class Test_FirmList(unittest.TestCase):
+class Test_login(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -34,8 +34,8 @@ class Test_FirmList(unittest.TestCase):
             test_result = "Fail"
             raise e
         finally:
-            OperateExcel(r"\test_data\AssetManagement\firm\firm.xlsx",
-                        sheet_name="FirmList").write_excel_data(item["case_id"] + 1,str(res),test_result)
+            OperateExcel(r"\test_data\AssetManagement\common\login.xlsx",
+                        sheet_name="login").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':
