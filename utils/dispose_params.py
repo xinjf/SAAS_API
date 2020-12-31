@@ -15,6 +15,7 @@ def deal_with_rely(data, response):
         value = extract_json(res_json, path)
         data = pattern.sub(str(value), data, 1)
     data = json.loads(data)
+
     if "real_operator_id" in data:
         data["real_operator_id"] = real_operator_id
     return  data        # 返回的dict
@@ -30,7 +31,8 @@ def extract_json(data, path):
         # data = json.loads(data)  # json转化字典
         value = [match.value for match in exe_json.find(data)]
         value = random.choice(value)
-        return int(value)
+        return value
     except TypeError:
         raise ValueError("未能获取有效的参数或者给予的json路径不对，请检查参数设置")
 
+# if __name__ == "__main__":

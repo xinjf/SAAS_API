@@ -1,4 +1,6 @@
 from openpyxl import load_workbook
+
+from lib.generate_logs import info
 from utils.ramdom_params import RandomParams
 from utils.settings import BASE_PATH, operator_url
 

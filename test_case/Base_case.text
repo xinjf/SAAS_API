@@ -22,10 +22,10 @@ class %(class_name)s(unittest.TestCase):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = deal_with_rely(item["data"], self.response)
-
+        # print("请求参数：{}".format(data))
         res = http_requests(url=item["url"], data=data, method=item["method"],token=self.g["token"])
         self.response[item["case_id"]] = res
-
+        # # print("响应结果：{}".format(res))
         try:
             self.assertEqual(item["check_result"]['code'], res["code"])
             test_result = "PASS"
@@ -35,7 +35,7 @@ class %(class_name)s(unittest.TestCase):
             raise e
         finally:
             OperateExcel(r"%(case_path)s",
-                        sheet_name="%(sheet_name)s").write_excel_data(item["case_id"] + 1,str(res),test_result)
+                            sheet_name="%(sheet_name)s").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':
