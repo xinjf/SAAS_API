@@ -12,38 +12,37 @@ from utils.settings import HTML_PATH
 
 class SendNewMail:
     """发送邮件"""
+
     def find_new_file(self, file):
         file_lists = os.listdir(file)
         try:
             file_lists.sort(key=lambda fn: os.path.getmtime(
                 file + "\\" + fn)
-                if not os.path.isdir(file + "\\" + fn) else 0)
+            if not os.path.isdir(file + "\\" + fn) else 0)
             file = os.path.join(file, file_lists[-1])
             info("获取最新的html报告：{0}".format(file))
             return file
         except Exception as error:
             info(error)
 
-
-    def send_mail_html(self ):
+    def send_mail_html(self):
         file = self.find_new_file(HTML_PATH)
-        email = OperateIni("email.ini").ini_read_items( "email")
-
+        email = OperateIni("email.ini").ini_read_items("email")
 
         # 发送邮箱服务器   smtpserver = '192.168.20.190'
-        username = email["username"]    # 发送邮箱用户/密码
-        password = email["password"]    # 邮箱授权码，需要邮箱设置里面获取
+        username = email["username"]  # 发送邮箱用户/密码
+        password = email["password"]  # 邮箱授权码，需要邮箱设置里面获取
         mail_host = email["mail_host"]  # 设置smtp服务器
 
         # 发送邮件主题 获取2019-05-31 18:08:39格式的时间戳
         subject = '接口自动化测试报告_' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())  #
         sender = email["sender"]  # 发送邮箱账号
-        receiver = email["receiver"]     # 接收邮箱账号
+        receiver = email["receiver"]  # 接收邮箱账号
         receivers = receiver.split(",")
 
         msg = MIMEMultipart('mixed')
         msg['Subject'] = Header(subject, 'utf-8')
-        msg['From'] = "冯馨剑" # 发件人  _format_addr('发送<%s>'%from_addr)
+        msg['From'] = "冯馨剑"  # 发件人  _format_addr('发送<%s>'%from_addr)
         msg['To'] = ",".join(receivers)  # 多个接收人
         # msg['To'] = receiver            # 单个接收人
 
@@ -75,5 +74,3 @@ class SendNewMail:
             info("邮件已发送到：{}的邮箱！".format(receiver))
         except smtplib.SMTPException as e:
             info("邮件发送失败:{}！".format(e))
-
-

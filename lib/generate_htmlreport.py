@@ -5,7 +5,6 @@ from package import htmltestrunner
 from utils.settings import HTML_PATH
 
 
-
 def generate_htmlreport():
     """
     生成测试报告
