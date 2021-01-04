@@ -17,9 +17,8 @@ class OperateYaml(object):
         case_data = yaml.load(file_content, Loader=yaml.FullLoader)[0]
         print(case_data)
         # case_id = case_data["id"]
-        url = operator_url+case_data["url"]
+        url = operator_url + case_data["url"]
         headers = case_data["headers"]
         data = case_data["data"]
         check = case_data["check"]
         return url, headers, data, check
-

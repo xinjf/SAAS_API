@@ -14,10 +14,7 @@ def choose_all_cases(case_suite, pattern):
     for cases in case_suite:
         case_suite = os.path.join(CASES_PATH, cases)
         discover_all_cases = unittest.defaultTestLoader.discover(case_suite, pattern=pattern,
-                                                             top_level_dir=None)
+                                                                 top_level_dir=None)
         suite = unittest.TestSuite()
         suite.addTest(discover_all_cases)
         return suite
-
-
-

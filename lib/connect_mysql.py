@@ -12,12 +12,12 @@ def connect_mysql(sql):
     sql： 需要执行的sql语句"""
     config = OperateIni("db.ini").ini_read_items(db_path)
     db = MySQLdb.connect(
-        host = config["host"],
+        host=config["host"],
         user=config["user"],
         passwd=config["password"],
-        port = 3306,
+        port=3306,
         charset="utf8",
-        cursorclass = MySQLdb.cursors.DictCursor)
+        cursorclass=MySQLdb.cursors.DictCursor)
     cursor = db.cursor()
     try:
         cursor.execute(sql)
@@ -29,5 +29,3 @@ def connect_mysql(sql):
     return data
 
 # print(connect_mysql("SELECT * from saas_operator.firm where real_operator_id = 20" )[0]["name"])
-
-

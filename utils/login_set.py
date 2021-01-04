@@ -52,3 +52,5 @@ class LoginSet:
         warnings.simplefilter("ignore", ResourceWarning)
         return cookie
 
+if __name__=="__main__":
+    LoginSet().get_token()
