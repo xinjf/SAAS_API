@@ -31,7 +31,6 @@ class OperateExcel:
                     "sql": sheet.cell(i, 7).value,
                     "sql_check": sheet.cell(i, 8).value,
                     "check_result": sheet.cell(i, 9).value}
-                print(type(sub_data))
                 if sub_data["case_id"] is None:
                     pass
                 else:
@@ -39,7 +38,6 @@ class OperateExcel:
                     sub_data["check_result"] = eval(sub_data["check_result"])
                     sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
                     test_data.append(sub_data)
-                sub_data["url"] = operator_url + sub_data["url"]
             except ValueError as e:
                 info("读取excel的{0}的第{1}条时的参数有误:{2}".format(self.sheet_name,i,e))
 
