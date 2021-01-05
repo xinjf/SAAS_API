@@ -17,17 +17,17 @@ def build_case():
         if file.endswith('.xlsx'):
             sheet_list = OperateExcel(cases_path).get_excel_sheet()
             for sheet in sheet_list:
-                class_name = "Test_" + sheet
+                class_name = "Test" + sheet
+                method_name = "test_" + sheet.lower()
             # 打开base_case.txt文件，并命名为data_fil
                 with open(os.path.join(CASES_PATH, 'Base_case.text'), 'r', encoding='utf-8') as data_file:
                     py_content = data_file.read() % {
                         'case_path': cases_path,
-                        'file_name': file,
                         'sheet_name': sheet,
                         'class_name': class_name,
-                        'method_name':sheet
+                        'method_name':method_name
                     }
-                    py_file_name = class_name.lower() + '.py'
+                    py_file_name = method_name + '.py'
                     case_list.append(py_file_name)
                     create_case_path = filepath.replace("data", "case", 1)
                 if os.path.exists(create_case_path) is False:
@@ -37,3 +37,6 @@ def build_case():
                 with open(os.path.join(create_case_path, py_file_name), 'w', encoding='utf-8') as py_file:
                     py_file.write(py_content)
     return case_list
+
+if __name__ == "__main__":
+    build_case()

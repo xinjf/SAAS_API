@@ -33,6 +33,6 @@ def delete_expired_files():
                     else:
                         file_list.append(path2)
 
-        return True
+        return "已删除过期report文件"
     except Exception as e:
         return e

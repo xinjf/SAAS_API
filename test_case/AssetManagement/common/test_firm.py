@@ -4,12 +4,12 @@ from utils.dispose_params import deal_with_rely
 from utils.http_requests import http_requests
 from ddt import ddt,data
 from utils.login_set import LoginSet
-from lib.generate_logs import info
+from lib.generate_logs import *
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Firm").read_excel_data()
 
 @ddt
-class Test_Firm(unittest.TestCase):
+class TestFirm(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -18,7 +18,7 @@ class Test_Firm(unittest.TestCase):
         cls.g["token"] = LoginSet().get_token()
 
     @data(*excel_data)
-    def test_01(self,item):
+    def test_firm(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = deal_with_rely(item["data"], self.response)
@@ -30,7 +30,8 @@ class Test_Firm(unittest.TestCase):
             self.assertEqual(item["check_result"]['code'], res["code"])
             test_result = "PASS"
         except AssertionError as e:
-            print("断言错误：{}".format(e))
+            warning("断言错误{}".format(e))
+            info("响应结果：{}".format(res))
             test_result = "Fail"
             raise e
         finally:
