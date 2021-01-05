@@ -4,7 +4,7 @@ from utils.dispose_params import deal_with_rely
 from utils.http_requests import http_requests
 from ddt import ddt,data
 from utils.login_set import LoginSet
-from lib.generate_logs import info
+from lib.generate_logs import *
 
 excel_data = OperateExcel(r"%(case_path)s", sheet_name="%(sheet_name)s").read_excel_data()
 
@@ -18,7 +18,7 @@ class %(class_name)s(unittest.TestCase):
         cls.g["token"] = LoginSet().get_token()
 
     @data(*excel_data)
-    def test_01(self,item):
+    def %(method_name)s(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = deal_with_rely(item["data"], self.response)
@@ -30,7 +30,8 @@ class %(class_name)s(unittest.TestCase):
             self.assertEqual(item["check_result"]['code'], res["code"])
             test_result = "PASS"
         except AssertionError as e:
-            print("断言错误：{}".format(e))
+            warning("断言错误{}".format(e))
+            info("响应结果：{}".format(res))
             test_result = "Fail"
             raise e
         finally:
