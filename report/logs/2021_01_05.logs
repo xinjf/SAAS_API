@@ -191,3 +191,51 @@
 [2021-01-05 15:46:49,884] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
 [2021-01-05 15:46:49,885] -INFO: -------接口测试流程测试完成----------
 [2021-01-05 15:46:49,886] -INFO: 删除过期的报告:已删除过期report文件
+[2021-01-05 15:55:24,525] -INFO: 生成测试用例列表：['test_firm.py', 'test_staff.py', 'test_store.py', 'test_user.py']
+[2021-01-05 15:55:24,525] -INFO: -------- 开始执行用例----------------
+[2021-01-05 15:55:24,526] -INFO: 生成接口自动化测试报告:2021_01_05-15_55_24_report.html
+[2021-01-05 15:55:26,185] -INFO: 当前执行的测试用例是：新建主体
+[2021-01-05 15:55:27,474] -INFO: 用例test_firm_1 (common.test_firm.TestFirm)执行成功
+[2021-01-05 15:55:27,474] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-05 15:55:28,620] -INFO: 用例test_firm_2 (common.test_firm.TestFirm)执行成功
+[2021-01-05 15:55:28,620] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-05 15:55:29,748] -INFO: 用例test_firm_3 (common.test_firm.TestFirm)执行成功
+[2021-01-05 15:55:29,748] -INFO: 当前执行的测试用例是：编辑主体
+[2021-01-05 15:55:31,237] -INFO: 用例test_firm_4 (common.test_firm.TestFirm)执行成功
+[2021-01-05 15:55:31,238] -INFO: 当前执行的测试用例是：删除主体
+[2021-01-05 15:55:32,389] -INFO: 用例test_firm_5 (common.test_firm.TestFirm)执行成功
+[2021-01-05 15:55:32,390] -INFO: 当前执行的测试用例是：新增员工
+[2021-01-05 15:55:33,451] -INFO: 用例test_staff_1 (common.test_staff.TestStaff)执行成功
+[2021-01-05 15:55:33,452] -INFO: 当前执行的测试用例是：员工列表
+[2021-01-05 15:55:35,087] -INFO: 用例test_staff_2 (common.test_staff.TestStaff)执行成功
+[2021-01-05 15:55:35,088] -INFO: 当前执行的测试用例是：员工详情
+[2021-01-05 15:55:35,971] -INFO: 用例test_staff_3 (common.test_staff.TestStaff)执行成功
+[2021-01-05 15:55:35,971] -INFO: 当前执行的测试用例是：编辑员工
+[2021-01-05 15:55:37,035] -INFO: 用例test_staff_4 (common.test_staff.TestStaff)执行成功
+[2021-01-05 15:55:37,035] -INFO: 当前执行的测试用例是：删除员工
+[2021-01-05 15:55:39,147] -INFO: 用例test_staff_5 (common.test_staff.TestStaff)执行成功
+[2021-01-05 15:55:39,147] -INFO: 当前执行的测试用例是：新建门店
+[2021-01-05 15:55:40,221] -INFO: 用例test_store_1 (common.test_store.TestStore)执行成功
+[2021-01-05 15:55:40,222] -INFO: 当前执行的测试用例是：编辑门店
+[2021-01-05 15:55:43,092] -INFO: 用例test_store_2 (common.test_store.TestStore)执行成功
+[2021-01-05 15:55:43,092] -INFO: 当前执行的测试用例是：查看门店详情
+[2021-01-05 15:55:45,260] -INFO: 用例test_store_3 (common.test_store.TestStore)执行成功
+[2021-01-05 15:55:45,261] -INFO: 当前执行的测试用例是：门店列表
+[2021-01-05 15:55:46,564] -INFO: 用例test_store_4 (common.test_store.TestStore)执行成功
+[2021-01-05 15:55:46,565] -INFO: 当前执行的测试用例是：删除门店
+[2021-01-05 15:55:48,691] -INFO: 用例test_store_5 (common.test_store.TestStore)执行成功
+[2021-01-05 15:55:48,693] -INFO: 当前执行的测试用例是：新建会员成员
+[2021-01-05 15:55:50,149] -INFO: 用例test_user_1 (common.test_user.TestUser)执行成功
+[2021-01-05 15:55:50,149] -INFO: 当前执行的测试用例是：查询会员列表
+[2021-01-05 15:55:51,211] -INFO: 用例test_user_2 (common.test_user.TestUser)执行成功
+[2021-01-05 15:55:51,211] -INFO: 当前执行的测试用例是：查看会员详情
+[2021-01-05 15:55:52,200] -INFO: 用例test_user_3 (common.test_user.TestUser)执行成功
+[2021-01-05 15:55:52,200] -INFO: 当前执行的测试用例是：编辑会员
+[2021-01-05 15:55:54,097] -INFO: 用例test_user_4 (common.test_user.TestUser)执行成功
+[2021-01-05 15:55:54,097] -INFO: 当前执行的测试用例是：查询会员账号
+[2021-01-05 15:55:55,346] -INFO: 用例test_user_5 (common.test_user.TestUser)执行成功
+[2021-01-05 15:55:55,347] -INFO: 当前执行的测试用例是：新增会员账号
+[2021-01-05 15:55:56,474] -INFO: 用例test_user_6 (common.test_user.TestUser)执行成功
+[2021-01-05 15:55:56,475] -INFO: 获取最新的html报告：C:\Users\pujun\Desktop\SAAS_API\report\report\2021_01_05-15_55_24_report.html
+[2021-01-05 15:55:57,319] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
+[2021-01-05 15:55:57,321] -INFO: 删除过期的报告:已删除过期report文件

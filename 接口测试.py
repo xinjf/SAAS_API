@@ -17,5 +17,4 @@
 #     res=http_requests(url,data =data,method=method,token=token)
 #     print(res)
 
-print(isinstance("xxx",str))
 

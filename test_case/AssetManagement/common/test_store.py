@@ -2,6 +2,7 @@ import unittest
 from lib.operate_excel_data import OperateExcel
 from utils.dispose_params import deal_with_rely
 from utils.http_requests import http_requests
+from utils.environment_variable import EnvironmentVariable
 from ddt import ddt,data
 from utils.login_set import LoginSet
 from lib.generate_logs import *
@@ -14,8 +15,8 @@ class TestStore(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.response = {}
-        cls.g = globals()
-        cls.g["token"] = LoginSet().get_token()
+        # cls.g = globals()
+        # cls.g["token"] = LoginSet().get_token()
 
     @data(*excel_data)
     def test_store(self,item):
@@ -23,7 +24,7 @@ class TestStore(unittest.TestCase):
 
         data = deal_with_rely(item["data"], self.response)
         # print("请求参数：{}".format(data))
-        res = http_requests(url=item["url"], data=data, method=item["method"],token=self.g["token"])
+        res = http_requests(url=item["url"], data=data, method=item["method"],token=getattr(EnvironmentVariable,"token"))
         self.response[item["case_id"]] = res
         # # print("响应结果：{}".format(res))
         try:

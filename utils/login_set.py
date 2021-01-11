@@ -7,7 +7,7 @@ from utils.settings import *
 import datetime
 
 
-class LoginSet:
+class LoginSet():
 
     def create_token(self):
         staff["real_operator_id"] =real_operator_id
