@@ -125,9 +125,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 冯馨剑</p>
-<p class='attribute'><strong>开始时间 : </strong> 2021-01-11 16:16:55</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.025059</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 4，错误 4，通过率= 0.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2021-01-12 09:19:15</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.639880</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 5，通过 3，失败 2，通过率= 60.00%</p>
 
 <p class='description'>用例执行情况:</p>
 </div>
@@ -135,11 +135,11 @@ function html_escape(s) {
 
 
     <p id='show_detail_line'>
-    <a class="btn btn-primary" href='javascript:showCase(0)'>通过率 [0.00% ]</a>
-    <a class="btn btn-success" href='javascript:showCase(2)'>通过[ 0 ]</a>
-    <a class="btn btn-warning" href='javascript:showCase(3)'>错误[ 4 ]</a>
-    <a class="btn btn-danger" href='javascript:showCase(1)'>失败[ 0 ]</a>
-    <a class="btn btn-info" href='javascript:showCase(4)'>所有[ 4 ]</a>
+    <a class="btn btn-primary" href='javascript:showCase(0)'>通过率 [60.00% ]</a>
+    <a class="btn btn-success" href='javascript:showCase(2)'>通过[ 3 ]</a>
+    <a class="btn btn-warning" href='javascript:showCase(3)'>错误[ 0 ]</a>
+    <a class="btn btn-danger" href='javascript:showCase(1)'>失败[ 2 ]</a>
+    <a class="btn btn-info" href='javascript:showCase(4)'>所有[ 5 ]</a>
     </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -159,38 +159,28 @@ function html_escape(s) {
     <td>详细    </td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>unittest.loader._FailedTest</td>
-    <td class="text-center">4</td>
+<tr class='failClass warning'>
+    <td>common.test_firm.TestFirm</td>
+    <td class="text-center">5</td>
+    <td class="text-center">3</td>
     <td class="text-center">0</td>
-    <td class="text-center">4</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">2</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',5)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_firm</div></td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_firm_1</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">  -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
     <pre>
     
-ft1_1: ImportError: Failed to import test module: common.test_firm
-Traceback (most recent call last):
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_firm.py", line 27
-    self.response[item["case_id"]] = res
-    ^
-SyntaxError: invalid syntax
-
+pt1_1: [2021-01-12 09:19:16,094] -INFO: 当前执行的测试用例是：新建主体
 
 
     </pre>
@@ -199,28 +189,28 @@ SyntaxError: invalid syntax
 </tr>
 
 <tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_staff</div></td>
+    <td class='failCase'><div class='testcase'>test_firm_2</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_2'>错误</button>
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_2'>失败</button>
     <div id='div_ft1_2' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_2'>错误</button>
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_2'>失败</button>
     <div id='div_ft1_2' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
     <pre>
     
-ft1_2: ImportError: Failed to import test module: common.test_staff
+ft1_2: [2021-01-12 09:19:17,158] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-12 09:19:19,028] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:19:19,028] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
 Traceback (most recent call last):
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_staff.py", line 27
-    self.response[item["case_id"]] = res
-    ^
-SyntaxError: invalid syntax
-
+  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_firm.py", line 35, in test_firm
+    raise e
+  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_firm.py", line 29, in test_firm
+    self.assertEqual(item["check_result"]['code'], res["code"])
+AssertionError: 200 != 50006
 
 
     </pre>
@@ -229,28 +219,28 @@ SyntaxError: invalid syntax
 </tr>
 
 <tr id='ft1_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_store</div></td>
+    <td class='failCase'><div class='testcase'>test_firm_3</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_3'>错误</button>
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_3'>失败</button>
     <div id='div_ft1_3' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_3'>错误</button>
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_3'>失败</button>
     <div id='div_ft1_3' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
     <pre>
     
-ft1_3: ImportError: Failed to import test module: common.test_store
+ft1_3: [2021-01-12 09:19:19,217] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-12 09:19:20,114] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:19:20,115] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
 Traceback (most recent call last):
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_store.py", line 27
-    self.response[item["case_id"]] = res
-    ^
-SyntaxError: invalid syntax
-
+  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_firm.py", line 35, in test_firm
+    raise e
+  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_firm.py", line 29, in test_firm
+    self.assertEqual(item["check_result"]['code'], res["code"])
+AssertionError: 200 != 50006
 
 
     </pre>
@@ -258,29 +248,39 @@ SyntaxError: invalid syntax
     </td>
 </tr>
 
-<tr id='ft1_4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_user</div></td>
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_firm_4</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse">  -->
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_ft1_4'>错误</button>
-    <div id='div_ft1_4' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
     <pre>
     
-ft1_4: ImportError: Failed to import test module: common.test_user
-Traceback (most recent call last):
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\pujun\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\pujun\Desktop\SAAS_API\test_case\AssetManagement\common\test_user.py", line 27
-    self.response[item["case_id"]] = res
-    ^
-SyntaxError: invalid syntax
+pt1_4: [2021-01-12 09:19:20,318] -INFO: 当前执行的测试用例是：编辑主体
 
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_firm_5</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs collapsed" test_data-toggle="collapse" test_data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs" test_data-toggle="collapse" test_data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse in" style='text-align: left; color:red;cursor:pointer'>
+    <pre>
+    
+pt1_5: [2021-01-12 09:19:21,712] -INFO: 当前执行的测试用例是：删除主体
 
 
     </pre>
@@ -290,11 +290,11 @@ SyntaxError: invalid syntax
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>4</td>
+    <td>5</td>
+    <td>3</td>
     <td>0</td>
-    <td>4</td>
-    <td>0</td>
-    <td>通过率：0.00%</td>
+    <td>2</td>
+    <td>通过率：60.00%</td>
 </tr>
 </table>
 

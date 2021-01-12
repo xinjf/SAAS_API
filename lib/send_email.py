@@ -59,6 +59,7 @@ class SendNewMail:
         msg_html["Content-Disposition"] = 'attachment; filename="TestReport.html"'
         msg.attach(msg_html)
 
+
         # 构造图片链接
         # sendimagefile = open(r'D:\pythontest\testimage.png', 'rb').read()
         # image = MIMEImage(sendimagefile)
@@ -74,3 +75,5 @@ class SendNewMail:
             info("邮件已发送到：{}的邮箱！".format(receiver))
         except smtplib.SMTPException as e:
             info("邮件发送失败:{}！".format(e))
+if __name__=="__main__":
+    SendNewMail().send_mail_html()

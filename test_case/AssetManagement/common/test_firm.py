@@ -15,8 +15,6 @@ class TestFirm(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.response = {}
-        # cls.g = globals()
-        # cls.g["token"] = LoginSet().get_token()
 
     @data(*excel_data)
     def test_firm(self,item):

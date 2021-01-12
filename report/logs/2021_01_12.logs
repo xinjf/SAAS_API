@@ -1,0 +1,227 @@
+[2021-01-12 08:52:01,455] -INFO: 生成测试用例列表：['test_firm.py', 'test_staff.py', 'test_store.py', 'test_user.py']
+[2021-01-12 08:52:01,456] -INFO: -------- 开始执行用例----------------
+[2021-01-12 08:52:01,456] -INFO: 生成接口自动化测试报告:2021_01_12-08_52_01_report.html
+[2021-01-12 08:52:03,485] -INFO: 当前执行的测试用例是：新建主体
+[2021-01-12 08:52:04,957] -INFO: 用例test_firm_1 (common.test_firm.TestFirm)执行成功
+[2021-01-12 08:52:04,957] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-12 08:52:06,231] -WARNING: 断言错误200 != 50006
+[2021-01-12 08:52:06,233] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 08:52:06,430] -INFO: 用例test_firm_2 (common.test_firm.TestFirm)执行失败
+[2021-01-12 08:52:06,431] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-12 08:52:07,990] -WARNING: 断言错误200 != 50006
+[2021-01-12 08:52:07,990] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 08:52:08,179] -INFO: 用例test_firm_3 (common.test_firm.TestFirm)执行失败
+[2021-01-12 08:52:08,180] -INFO: 当前执行的测试用例是：编辑主体
+[2021-01-12 08:52:09,134] -INFO: 用例test_firm_4 (common.test_firm.TestFirm)执行成功
+[2021-01-12 08:52:09,135] -INFO: 当前执行的测试用例是：删除主体
+[2021-01-12 08:52:09,965] -INFO: 用例test_firm_5 (common.test_firm.TestFirm)执行成功
+[2021-01-12 08:52:09,966] -INFO: 当前执行的测试用例是：新增员工
+[2021-01-12 08:52:10,858] -INFO: 用例test_staff_1 (common.test_staff.TestStaff)执行成功
+[2021-01-12 08:52:10,859] -INFO: 当前执行的测试用例是：员工列表
+[2021-01-12 08:52:11,576] -INFO: 用例test_staff_2 (common.test_staff.TestStaff)执行成功
+[2021-01-12 08:52:11,576] -INFO: 当前执行的测试用例是：员工详情
+[2021-01-12 08:52:12,289] -INFO: 用例test_staff_3 (common.test_staff.TestStaff)执行成功
+[2021-01-12 08:52:12,289] -INFO: 当前执行的测试用例是：编辑员工
+[2021-01-12 08:52:13,224] -INFO: 用例test_staff_4 (common.test_staff.TestStaff)执行成功
+[2021-01-12 08:52:13,224] -INFO: 当前执行的测试用例是：删除员工
+[2021-01-12 08:52:14,692] -INFO: 用例test_staff_5 (common.test_staff.TestStaff)执行成功
+[2021-01-12 08:52:14,692] -INFO: 当前执行的测试用例是：新建门店
+[2021-01-12 08:52:15,666] -INFO: 用例test_store_1 (common.test_store.TestStore)执行成功
+[2021-01-12 08:52:15,666] -INFO: 当前执行的测试用例是：编辑门店
+[2021-01-12 08:52:16,894] -INFO: 用例test_store_2 (common.test_store.TestStore)执行成功
+[2021-01-12 08:52:16,895] -INFO: 当前执行的测试用例是：查看门店详情
+[2021-01-12 08:52:17,915] -WARNING: 断言错误200 != 50006
+[2021-01-12 08:52:17,916] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 08:52:18,088] -INFO: 用例test_store_3 (common.test_store.TestStore)执行失败
+[2021-01-12 08:52:18,089] -INFO: 当前执行的测试用例是：门店列表
+[2021-01-12 08:52:19,113] -WARNING: 断言错误200 != 50006
+[2021-01-12 08:52:19,113] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 08:52:19,309] -INFO: 用例test_store_4 (common.test_store.TestStore)执行失败
+[2021-01-12 08:52:19,310] -INFO: 当前执行的测试用例是：删除门店
+[2021-01-12 08:52:21,620] -INFO: 用例test_store_5 (common.test_store.TestStore)执行成功
+[2021-01-12 08:52:21,621] -INFO: 当前执行的测试用例是：新建会员成员
+[2021-01-12 08:52:23,299] -INFO: 用例test_user_1 (common.test_user.TestUser)执行成功
+[2021-01-12 08:52:23,300] -INFO: 当前执行的测试用例是：查询会员列表
+[2021-01-12 08:52:24,114] -INFO: 用例test_user_2 (common.test_user.TestUser)执行成功
+[2021-01-12 08:52:24,114] -INFO: 当前执行的测试用例是：查看会员详情
+[2021-01-12 08:52:24,942] -INFO: 用例test_user_3 (common.test_user.TestUser)执行成功
+[2021-01-12 08:52:24,943] -INFO: 当前执行的测试用例是：编辑会员
+[2021-01-12 08:52:25,784] -WARNING: 断言错误200 != 50006
+[2021-01-12 08:52:25,785] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 08:52:25,991] -INFO: 用例test_user_4 (common.test_user.TestUser)执行失败
+[2021-01-12 08:52:25,991] -INFO: 当前执行的测试用例是：查询会员账号
+[2021-01-12 08:52:26,957] -INFO: 用例test_user_5 (common.test_user.TestUser)执行成功
+[2021-01-12 08:52:26,957] -INFO: 当前执行的测试用例是：新增会员账号
+[2021-01-12 08:52:27,883] -INFO: 用例test_user_6 (common.test_user.TestUser)执行成功
+[2021-01-12 08:52:27,887] -INFO: 获取最新的html报告：C:\Users\pujun\Desktop\SAAS_API\report\report\2021_01_12-08_52_01_report.html
+[2021-01-12 08:52:29,179] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
+[2021-01-12 08:52:29,181] -INFO: 删除过期的报告:已删除过期report文件
+[2021-01-12 09:02:49,713] -INFO: 获取最新的html报告：C:\Users\pujun\Desktop\SAAS_API\report\report\2021_01_12-08_52_01_report.html
+[2021-01-12 09:02:50,263] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
+[2021-01-12 09:03:40,193] -INFO: 获取最新的html报告：C:\Users\pujun\Desktop\SAAS_API\report\report\2021_01_12-08_52_01_report.html
+[2021-01-12 09:03:41,162] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
+[2021-01-12 09:06:07,412] -INFO: 获取最新的html报告：C:\Users\pujun\Desktop\SAAS_API\report\report\2021_01_12-08_52_01_report.html
+[2021-01-12 09:06:07,870] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
+[2021-01-12 09:06:32,224] -INFO: 获取最新的html报告：C:\Users\pujun\Desktop\SAAS_API\report\report\2021_01_12-08_52_01_report.html
+[2021-01-12 09:06:32,667] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
+[2021-01-12 09:10:14,967] -INFO: 生成测试用例列表：['test_firm.py', 'test_staff.py', 'test_store.py', 'test_user.py']
+[2021-01-12 09:10:14,967] -INFO: -------- 开始执行用例----------------
+[2021-01-12 09:10:14,968] -INFO: 生成接口自动化测试报告:2021_01_12-09_10_14_report.html
+[2021-01-12 09:10:16,241] -INFO: 当前执行的测试用例是：新建主体
+[2021-01-12 09:10:17,792] -INFO: 用例test_firm_1 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:10:17,792] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-12 09:10:18,670] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:10:18,671] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:10:18,877] -INFO: 用例test_firm_2 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:10:18,877] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-12 09:10:19,693] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:10:19,694] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:10:19,871] -INFO: 用例test_firm_3 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:10:19,872] -INFO: 当前执行的测试用例是：编辑主体
+[2021-01-12 09:10:20,750] -INFO: 用例test_firm_4 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:10:20,751] -INFO: 当前执行的测试用例是：删除主体
+[2021-01-12 09:10:22,715] -INFO: 用例test_firm_5 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:10:22,715] -INFO: 当前执行的测试用例是：新增员工
+[2021-01-12 09:10:23,532] -INFO: 用例test_staff_1 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:10:23,532] -INFO: 当前执行的测试用例是：员工列表
+[2021-01-12 09:10:24,349] -INFO: 用例test_staff_2 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:10:24,350] -INFO: 当前执行的测试用例是：员工详情
+[2021-01-12 09:10:25,046] -INFO: 用例test_staff_3 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:10:25,046] -INFO: 当前执行的测试用例是：编辑员工
+[2021-01-12 09:10:26,308] -INFO: 用例test_staff_4 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:10:26,308] -INFO: 当前执行的测试用例是：删除员工
+[2021-01-12 09:10:27,512] -INFO: 用例test_staff_5 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:10:27,513] -INFO: 当前执行的测试用例是：新建门店
+[2021-01-12 09:10:28,367] -INFO: 用例test_store_1 (common.test_store.TestStore)执行成功
+[2021-01-12 09:10:28,368] -INFO: 当前执行的测试用例是：编辑门店
+[2021-01-12 09:10:29,627] -INFO: 用例test_store_2 (common.test_store.TestStore)执行成功
+[2021-01-12 09:10:29,628] -INFO: 当前执行的测试用例是：查看门店详情
+[2021-01-12 09:10:30,634] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:10:30,635] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:10:30,823] -INFO: 用例test_store_3 (common.test_store.TestStore)执行失败
+[2021-01-12 09:10:30,823] -INFO: 当前执行的测试用例是：门店列表
+[2021-01-12 09:10:31,680] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:10:31,680] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:10:31,889] -INFO: 用例test_store_4 (common.test_store.TestStore)执行失败
+[2021-01-12 09:10:31,889] -INFO: 当前执行的测试用例是：删除门店
+[2021-01-12 09:10:33,396] -INFO: 用例test_store_5 (common.test_store.TestStore)执行成功
+[2021-01-12 09:10:33,396] -INFO: 当前执行的测试用例是：新建会员成员
+[2021-01-12 09:10:34,503] -INFO: 用例test_user_1 (common.test_user.TestUser)执行成功
+[2021-01-12 09:10:34,503] -INFO: 当前执行的测试用例是：查询会员列表
+[2021-01-12 09:10:35,379] -INFO: 用例test_user_2 (common.test_user.TestUser)执行成功
+[2021-01-12 09:10:35,379] -INFO: 当前执行的测试用例是：查看会员详情
+[2021-01-12 09:10:36,171] -INFO: 用例test_user_3 (common.test_user.TestUser)执行成功
+[2021-01-12 09:10:36,172] -INFO: 当前执行的测试用例是：编辑会员
+[2021-01-12 09:10:39,300] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:10:39,300] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:10:39,504] -INFO: 用例test_user_4 (common.test_user.TestUser)执行失败
+[2021-01-12 09:10:39,505] -INFO: 当前执行的测试用例是：查询会员账号
+[2021-01-12 09:10:40,466] -INFO: 用例test_user_5 (common.test_user.TestUser)执行成功
+[2021-01-12 09:10:40,467] -INFO: 当前执行的测试用例是：新增会员账号
+[2021-01-12 09:10:41,319] -INFO: 用例test_user_6 (common.test_user.TestUser)执行成功
+[2021-01-12 09:10:41,321] -INFO: 获取最新的html报告：C:\Users\pujun\Desktop\SAAS_API\report\report\2021_01_12-09_10_14_report.html
+[2021-01-12 09:10:43,704] -INFO: 邮件已发送到：18884129577@163.com的邮箱！
+[2021-01-12 09:10:43,706] -INFO: 删除过期的报告:已删除过期report文件
+[2021-01-12 09:12:33,830] -INFO: -------- 开始执行用例----------------
+[2021-01-12 09:12:33,831] -INFO: 生成接口自动化测试报告:2021_01_12-09_12_33_report.html
+[2021-01-12 09:12:34,248] -INFO: 当前执行的测试用例是：新建主体
+[2021-01-12 09:12:35,293] -INFO: 用例test_firm_1 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:12:35,293] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-12 09:12:36,779] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:12:36,779] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:12:36,961] -INFO: 用例test_firm_2 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:12:36,961] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-12 09:12:37,705] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:12:37,706] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:12:37,913] -INFO: 用例test_firm_3 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:12:37,914] -INFO: 当前执行的测试用例是：编辑主体
+[2021-01-12 09:12:38,766] -INFO: 用例test_firm_4 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:12:38,766] -INFO: 当前执行的测试用例是：删除主体
+[2021-01-12 09:12:39,900] -INFO: 用例test_firm_5 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:12:39,901] -INFO: 当前执行的测试用例是：新增员工
+[2021-01-12 09:12:40,735] -INFO: 用例test_staff_1 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:12:40,736] -INFO: 当前执行的测试用例是：员工列表
+[2021-01-12 09:12:41,444] -INFO: 用例test_staff_2 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:12:41,444] -INFO: 当前执行的测试用例是：员工详情
+[2021-01-12 09:12:42,813] -INFO: 用例test_staff_3 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:12:42,813] -INFO: 当前执行的测试用例是：编辑员工
+[2021-01-12 09:12:44,203] -INFO: 用例test_staff_4 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:12:44,204] -INFO: 当前执行的测试用例是：删除员工
+[2021-01-12 09:12:45,318] -INFO: 用例test_staff_5 (common.test_staff.TestStaff)执行成功
+[2021-01-12 09:12:45,319] -INFO: 当前执行的测试用例是：新建门店
+[2021-01-12 09:12:46,224] -INFO: 用例test_store_1 (common.test_store.TestStore)执行成功
+[2021-01-12 09:12:46,224] -INFO: 当前执行的测试用例是：编辑门店
+[2021-01-12 09:12:47,340] -INFO: 用例test_store_2 (common.test_store.TestStore)执行成功
+[2021-01-12 09:12:47,340] -INFO: 当前执行的测试用例是：查看门店详情
+[2021-01-12 09:12:48,395] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:12:48,395] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:12:48,628] -INFO: 用例test_store_3 (common.test_store.TestStore)执行失败
+[2021-01-12 09:12:48,629] -INFO: 当前执行的测试用例是：门店列表
+[2021-01-12 09:12:53,027] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:12:53,027] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:12:53,224] -INFO: 用例test_store_4 (common.test_store.TestStore)执行失败
+[2021-01-12 09:12:53,225] -INFO: 当前执行的测试用例是：删除门店
+[2021-01-12 09:12:54,760] -INFO: 用例test_store_5 (common.test_store.TestStore)执行成功
+[2021-01-12 09:12:54,761] -INFO: 当前执行的测试用例是：新建会员成员
+[2021-01-12 09:12:55,840] -INFO: 用例test_user_1 (common.test_user.TestUser)执行成功
+[2021-01-12 09:12:55,840] -INFO: 当前执行的测试用例是：查询会员列表
+[2021-01-12 09:12:56,624] -INFO: 用例test_user_2 (common.test_user.TestUser)执行成功
+[2021-01-12 09:12:56,624] -INFO: 当前执行的测试用例是：查看会员详情
+[2021-01-12 09:12:58,099] -INFO: 用例test_user_3 (common.test_user.TestUser)执行成功
+[2021-01-12 09:12:58,100] -INFO: 当前执行的测试用例是：编辑会员
+[2021-01-12 09:12:58,916] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:12:58,916] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:12:59,114] -INFO: 用例test_user_4 (common.test_user.TestUser)执行失败
+[2021-01-12 09:12:59,115] -INFO: 当前执行的测试用例是：查询会员账号
+[2021-01-12 09:13:00,110] -INFO: 用例test_user_5 (common.test_user.TestUser)执行成功
+[2021-01-12 09:13:00,110] -INFO: 当前执行的测试用例是：新增会员账号
+[2021-01-12 09:13:01,172] -INFO: 用例test_user_6 (common.test_user.TestUser)执行成功
+[2021-01-12 09:13:01,174] -INFO: 删除过期的报告:已删除过期report文件
+[2021-01-12 09:18:47,402] -INFO: -------- 开始执行用例----------------
+[2021-01-12 09:18:47,403] -INFO: 生成接口自动化测试报告:2021_01_12-09_18_47_report.html
+[2021-01-12 09:18:48,873] -INFO: 当前执行的测试用例是：新建主体
+[2021-01-12 09:18:49,939] -INFO: 用例test_firm_1 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:18:49,940] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-12 09:18:50,683] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:18:50,684] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:18:50,878] -INFO: 用例test_firm_2 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:18:50,878] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-12 09:18:51,643] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:18:51,644] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:18:51,848] -INFO: 用例test_firm_3 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:18:51,848] -INFO: 当前执行的测试用例是：编辑主体
+[2021-01-12 09:19:15,925] -INFO: -------- 开始执行用例----------------
+[2021-01-12 09:19:15,926] -INFO: 生成接口自动化测试报告:2021_01_12-09_19_15_report.html
+[2021-01-12 09:19:16,094] -INFO: 当前执行的测试用例是：新建主体
+[2021-01-12 09:19:17,157] -INFO: 用例test_firm_1 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:19:17,158] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-12 09:19:19,028] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:19:19,028] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:19:19,216] -INFO: 用例test_firm_2 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:19:19,217] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-12 09:19:20,114] -WARNING: 断言错误200 != 50006
+[2021-01-12 09:19:20,115] -INFO: 响应结果：{'code': 50006, 'message': '客户端请求出错', 'data': [], 'error_data': 'cURL error 18: transfer closed with outstanding read data remaining (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)'}
+[2021-01-12 09:19:20,318] -INFO: 用例test_firm_3 (common.test_firm.TestFirm)执行失败
+[2021-01-12 09:19:20,318] -INFO: 当前执行的测试用例是：编辑主体
+[2021-01-12 09:19:21,711] -INFO: 用例test_firm_4 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:19:21,712] -INFO: 当前执行的测试用例是：删除主体
+[2021-01-12 09:19:22,565] -INFO: 用例test_firm_5 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:20:47,901] -INFO: -------- 开始执行用例----------------
+[2021-01-12 09:20:47,902] -INFO: 生成接口自动化测试报告:2021_01_12-09_20_47_report.html
+[2021-01-12 09:20:48,072] -INFO: 当前执行的测试用例是：新建主体
+[2021-01-12 09:20:53,616] -INFO: 用例test_firm_1 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:20:53,617] -INFO: 当前执行的测试用例是：主体列表
+[2021-01-12 09:20:55,519] -INFO: 用例test_firm_2 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:20:55,519] -INFO: 当前执行的测试用例是：主体详情
+[2021-01-12 09:21:16,556] -INFO: 用例test_firm_3 (common.test_firm.TestFirm)执行错误
+[2021-01-12 09:21:16,557] -INFO: 当前执行的测试用例是：编辑主体
+[2021-01-12 09:21:37,568] -INFO: 用例test_firm_4 (common.test_firm.TestFirm)执行错误
+[2021-01-12 09:21:37,568] -INFO: 当前执行的测试用例是：删除主体
+[2021-01-12 09:21:41,353] -INFO: 用例test_firm_5 (common.test_firm.TestFirm)执行成功
+[2021-01-12 09:21:41,355] -INFO: 删除过期的报告:已删除过期report文件
+[2021-01-12 11:51:39,897] -INFO: 当前执行的测试用例是：单个新增产品-step1
+[2021-01-12 11:51:41,612] -INFO: 当前执行的测试用例是：单个新增产品-step2
+[2021-01-12 11:51:42,923] -INFO: 当前执行的测试用例是：单个新增产品-step3
+[2021-01-12 11:51:44,607] -INFO: 当前执行的测试用例是：单个新增产品-step4
+[2021-01-12 11:51:45,865] -INFO: 当前执行的测试用例是：商品上架
+[2021-01-12 11:51:47,358] -INFO: 当前执行的测试用例是：商品下架
