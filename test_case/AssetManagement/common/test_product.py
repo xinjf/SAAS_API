@@ -7,17 +7,17 @@ from ddt import ddt,data
 from utils.login_set import LoginSet
 from lib.generate_logs import *
 
-excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Store").read_excel_data()
+excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Product").read_excel_data()
 
 @ddt
-class TestStore(unittest.TestCase):
+class TestProduct(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         cls.response = {}
 
     @data(*excel_data)
-    def test_store(self,item):
+    def test_product(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = deal_with_rely(item["data"], self.response)
@@ -35,7 +35,7 @@ class TestStore(unittest.TestCase):
             raise e
         finally:
             OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
-                            sheet_name="Store").write_excel_data(item["case_id"] + 1,str(res),test_result)
+                            sheet_name="Product").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':
