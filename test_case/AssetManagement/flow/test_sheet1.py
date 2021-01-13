@@ -7,17 +7,17 @@ from ddt import ddt,data
 from utils.login_set import LoginSet
 from lib.generate_logs import *
 
-excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Staff").read_excel_data()
+excel_data = OperateExcel(r"\test_data\AssetManagement\flow\flow.xlsx", sheet_name="Sheet1").read_excel_data()
 
 @ddt
-class TestStaff(unittest.TestCase):
+class TestSheet1(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         cls.response = {}
 
     @data(*excel_data)
-    def test_staff(self,item):
+    def test_sheet1(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = deal_with_rely(item["data"], self.response)
@@ -34,8 +34,8 @@ class TestStaff(unittest.TestCase):
             test_result = "Fail"
             raise e
         finally:
-            OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
-                            sheet_name="Staff").write_excel_data(item["case_id"] + 1,str(res),test_result)
+            OperateExcel(r"\test_data\AssetManagement\flow\flow.xlsx",
+                            sheet_name="Sheet1").write_excel_data(item["case_id"] + 1,str(res),test_result)
 
 
 if __name__ == '__main__':

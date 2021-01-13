@@ -21,5 +21,7 @@ def generate_htmlreport():
         description="用例执行情况:",
 
     )
-
     return runner
+
+if __name__ == "__main__":
+    generate_htmlreport()
