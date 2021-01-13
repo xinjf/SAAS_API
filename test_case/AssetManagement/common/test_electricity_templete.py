@@ -24,7 +24,7 @@ class Testelectricity_templete(unittest.TestCase):
         # print("请求参数：{}".format(data))
         res = http_requests(url=item["url"], data=data, method=item["method"],token=getattr(EnvironmentVariable,"token"))
         self.response[item["case_id"]] = res
-        # print("响应结果：{}".format(res))
+        # # print("响应结果：{}".format(res))
         try:
             self.assertEqual(item["check_result"]['code'], res["code"])
             test_result = "PASS"

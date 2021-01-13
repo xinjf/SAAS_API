@@ -72,6 +72,7 @@ from lib.generate_logs import info
 __author__ = "Wai Yip Tung,  Findyou，Adil"
 __version__ = "0.8.2.3"
 
+from utils.environment_variable import EnvironmentVariable
 
 """
 Change History
@@ -623,6 +624,8 @@ class HTMLTestRunner(Template_mixin):
             self.passrate = str("%.2f%%" % (float(result.success_count) / float(result.success_count + result.failure_count + result.error_count) * 100))
         else:
             status = 'none'
+        report = "共执行用例:{0}条，通过：{1}条，失败：{2}条，错误：{3}条" .format(result.success_count + result.failure_count + result.error_count,result.success_count,result.failure_count,result.error_count)
+        setattr(EnvironmentVariable,"report",report)
         return [
             ('测试人员', self.tester),
             ('开始时间',startTime),

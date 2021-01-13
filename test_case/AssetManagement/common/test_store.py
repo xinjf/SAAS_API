@@ -30,7 +30,7 @@ class TestStore(unittest.TestCase):
             test_result = "PASS"
         except AssertionError as e:
             warning("断言错误{}".format(e))
-            info("响应结果：{}".format(res))
+            warning("响应结果：{}".format(res))
             test_result = "Fail"
             raise e
         finally:
