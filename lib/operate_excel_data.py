@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 from lib.generate_logs import info
 from utils.ramdom_params import RandomParams
 from utils.settings import BASE_PATH, operator_url
-
+from  utils.dispose_params import deal_with_rely
 
 class OperateExcel:
     """
@@ -34,6 +34,7 @@ class OperateExcel:
                 sub_data["url"] = operator_url + sub_data["url"]
                 sub_data["check_result"] = eval(sub_data["check_result"])
                 sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
+
                 test_data.append(sub_data)
         wb.close()  # 读取文件后需要关闭，否则会报无打开文件权限
         return test_data
