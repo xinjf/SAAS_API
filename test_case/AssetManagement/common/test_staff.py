@@ -4,7 +4,6 @@ from utils.dispose_params import deal_with_rely
 from utils.http_requests import http_requests
 from utils.environment_variable import EnvironmentVariable
 from ddt import ddt,data
-from utils.login_set import LoginSet
 from lib.generate_logs import *
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Staff").read_excel_data()
