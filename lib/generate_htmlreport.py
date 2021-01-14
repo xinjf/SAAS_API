@@ -5,7 +5,7 @@ from package import htmltestrunner
 from utils.settings import HTML_PATH
 
 
-def generate_htmlreport():
+def generate_html_report():
     """
     生成测试报告
     """
@@ -22,6 +22,7 @@ def generate_htmlreport():
 
     )
     return runner
+
 
 if __name__ == "__main__":
     generate_htmlreport()

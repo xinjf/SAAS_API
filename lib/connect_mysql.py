@@ -3,7 +3,7 @@ import MySQLdb.cursors
 from lib.generate_logs import info
 from utils.operate_config import OperateIni
 from utils.settings import db_path
-import mysql.connector
+
 
 def connect_mysql(sql):
     """连接数据库
@@ -29,4 +29,5 @@ def connect_mysql(sql):
     db.close()
     return data
 
-print(connect_mysql("SELECT * from saas_operator.firm where real_operator_id = 20" )[0]["name"])
+
+print(connect_mysql("SELECT * from saas_operator.firm where real_operator_id = 20")[0]["name"])

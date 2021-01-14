@@ -2,9 +2,7 @@
 import json
 import random
 import string
-
 from lib.generate_logs import info
-
 
 class RandomParams:
 
@@ -13,17 +11,17 @@ class RandomParams:
         :return:随机手机号
         """
         phone_front = ["130", "131", "132", "133", "134", "135", "136", "137", "138", "139",
-                 "147", "150", "151", "152", "153", "155", "156", "157", "158", "159",
-                 "186", "187", "188", "189"]
-        return random.choice(phone_front) + ''.join(random.sample( string.digits, 8))
+                       "147", "150", "151", "152", "153", "155", "156", "157", "158", "159",
+                       "186", "187", "188", "189"]
+        return random.choice(phone_front) + ''.join(random.sample(string.digits, 8))
 
     def random_str(self):
         """
         :return:5位随机数
         """
-        return  ''.join(random.sample(string.ascii_letters + string.digits, 5))
+        return ''.join(random.sample(string.ascii_letters + string.digits, 5))
 
-    def build_random_params(self,data):
+    def build_random_params(self, data):
         try:
             if isinstance(data, dict):
                 data = json.dumps(data)
@@ -34,7 +32,3 @@ class RandomParams:
         except ValueError:
             info("random params isn`t json or dict")
         return data
-
-
-
-

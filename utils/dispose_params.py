@@ -5,6 +5,7 @@ from jsonpath_rw import parse
 from utils.settings import real_operator_id
 from lib.generate_logs import *
 
+
 def deal_with_rely(data, response):
     """正则匹配"""
     pattern = re.compile(r"\$\{(.+?)}")
@@ -20,7 +21,7 @@ def deal_with_rely(data, response):
             data["real_operator_id"] = real_operator_id
     except:
         warning("接口参数有误，请检查参数格式.{}".format(data))
-    return  data        # 返回的dict
+    return data  # 返回的dict
 
 
 def extract_json(data, path):

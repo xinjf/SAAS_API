@@ -6,16 +6,14 @@ from utils.http_requests import http_requests
 from utils.settings import *
 import datetime
 
-
 class LoginSet():
-
     def create_token(self):
-        staff["real_operator_id"] =real_operator_id
+        staff["real_operator_id"] = real_operator_id
         url = operator_url + '/api/common/login'
         res = http_requests(url, "post", staff)
         token = "bearer" + " " + res["data"]["staff"]["token"]
         nowtime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        OperateIni("AM_token.ini").ini_write_value( "token", "token", token)
+        OperateIni("AM_token.ini").ini_write_value("token", "token", token)
         OperateIni("AM_token.ini").ini_write_value("token", "time", nowtime)
         return token
 
@@ -25,15 +23,14 @@ class LoginSet():
         start_time = token_all["time"]
         end_time = (datetime.datetime.now() - datetime.timedelta(minutes=5)).strftime("%Y-%m-%d %H:%M:%S")
         if token != "":
-            if start_time > end_time :
+            if start_time > end_time:
                 return token
             else:
                 return self.create_token()
         else:
             return self.create_token()
 
-
-    def hash_md5(self,pwd):
+    def hash_md5(self, pwd):
         """MD5加密"""
         md5 = hashlib.md5()
         if pwd:
@@ -43,7 +40,7 @@ class LoginSet():
         else:
             return
 
-    def get_cookie(self,data, url):
+    def get_cookie(self, data, url):
         """根据data和url获取cookie"""
         data["password"] = self.hash_md5(data["password"])
         session = requests.session()
@@ -52,5 +49,6 @@ class LoginSet():
         warnings.simplefilter("ignore", ResourceWarning)
         return cookie
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     LoginSet().get_token()

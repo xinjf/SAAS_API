@@ -2,9 +2,7 @@ import os
 import yaml
 from utils.settings import DATA_PATH, operator_url
 
-
 class OperateYaml(object):
-
     @classmethod
     def get_yaml_data(cls, datafile):
         """读取yaml文件

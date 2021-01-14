@@ -6,22 +6,24 @@ from utils.environment_variable import EnvironmentVariable
 from ddt import ddt,data
 from lib.generate_logs import *
 
-excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="electricity_templete").read_excel_data()
+excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
+                          sheet_name="Electricity_Template").read_excel_data()
 
 @ddt
-class Testelectricity_templete(unittest.TestCase):
+class Test_Electricity_Template(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         cls.response = {}
 
     @data(*excel_data)
-    def test_electricity_templete(self,item):
+    def test_electricity_template(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         data = deal_with_rely(item["data"], self.response)
         # print("请求参数：{}".format(data))
-        res = http_requests(url=item["url"], data=data, method=item["method"],token=getattr(EnvironmentVariable,"token"))
+        res = http_requests(url=item["url"], data=data, method=item["method"],
+                            token=getattr(EnvironmentVariable,"token"))
         self.response[item["case_id"]] = res
         # # print("响应结果：{}".format(res))
         try:
@@ -34,7 +36,8 @@ class Testelectricity_templete(unittest.TestCase):
             raise e
         finally:
             OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
-                            sheet_name="electricity_templete").write_excel_data(item["case_id"] + 1,str(res),test_result)
+                         sheet_name="Electricity_Template").write_excel_data(item["case_id"] + 1,str(res),
+                                                                       test_result)
 
 
 if __name__ == '__main__':

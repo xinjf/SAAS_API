@@ -1,14 +1,12 @@
 import smtplib
 import os
 import time
-from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.header import Header
 from lib.generate_logs import info
 from utils.operate_config import OperateIni
 from utils.settings import HTML_PATH
-
 
 class SendNewMail:
     """发送邮件"""

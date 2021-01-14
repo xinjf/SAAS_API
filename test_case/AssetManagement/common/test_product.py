@@ -6,10 +6,11 @@ from utils.environment_variable import EnvironmentVariable
 from ddt import ddt,data
 from lib.generate_logs import *
 
-excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Product").read_excel_data()
+excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
+                          sheet_name="Product").read_excel_data()
 
 @ddt
-class TestProduct(unittest.TestCase):
+class Test_Product(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -21,7 +22,8 @@ class TestProduct(unittest.TestCase):
 
         data = deal_with_rely(item["data"], self.response)
         # print("请求参数：{}".format(data))
-        res = http_requests(url=item["url"], data=data, method=item["method"],token=getattr(EnvironmentVariable,"token"))
+        res = http_requests(url=item["url"], data=data, method=item["method"],
+                            token=getattr(EnvironmentVariable,"token"))
         self.response[item["case_id"]] = res
         # # print("响应结果：{}".format(res))
         try:
@@ -34,7 +36,8 @@ class TestProduct(unittest.TestCase):
             raise e
         finally:
             OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
-                            sheet_name="Product").write_excel_data(item["case_id"] + 1,str(res),test_result)
+                         sheet_name="Product").write_excel_data(item["case_id"] + 1,str(res),
+                                                                       test_result)
 
 
 if __name__ == '__main__':
