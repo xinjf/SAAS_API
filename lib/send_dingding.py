@@ -6,9 +6,9 @@ class SendDingDing:
     def __init__(self):
         # 初始化机器人小丁
         # 测试地址
-        # webhook = 'https://oapi.dingtalk.com/robot/send?access_token=430f1709c33d977df347f3a0d887b4e3d1465bd40d6bc5cb2007761804aa5a98'
+        webhook = 'https://oapi.dingtalk.com/robot/send?access_token=430f1709c33d977df347f3a0d887b4e3d1465bd40d6bc5cb2007761804aa5a98'
         # 正式地址：
-        webhook = 'https://oapi.dingtalk.com/robot/send?access_token=7c8de00eaa1e9de73554bd550e6387b71b81c06cd27484d539dbb3d4aed24f70'
+        # webhook = 'https://oapi.dingtalk.com/robot/send?access_token=7c8de00eaa1e9de73554bd550e6387b71b81c06cd27484d539dbb3d4aed24f70'
         self.ding = DingtalkChatbot(webhook)
 
     def send(self):
