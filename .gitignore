@@ -6,3 +6,5 @@ __pycache__
 AM_token.ini
 *.logs
 *.html
+*.xlsx
+*.xls
