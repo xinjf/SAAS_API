@@ -30,11 +30,13 @@ class OperateExcel:
                 "sql_check": sheet.cell(i, 8).value,
                 "check_result": sheet.cell(i, 9).value}
             if sub_data["case_id"] is not None:
-                sub_data["url"] = operator_url + sub_data["url"]
-                sub_data["check_result"] = eval(sub_data["check_result"])
-                sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
-
-                test_data.append(sub_data)
+                if sub_data["sql"] is None:
+                    sub_data["url"] = operator_url + sub_data["url"]
+                    sub_data["check_result"] = eval(sub_data["check_result"])
+                    sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
+                    test_data.append(sub_data)
+                else:
+                    test_data.append(sub_data)
         wb.close()  # 读取文件后需要关闭，否则会报无打开文件权限
         return test_data
 
@@ -53,4 +55,4 @@ class OperateExcel:
 
 
 if __name__ == "__main__":
-    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Firm").read_excel_data()
+    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Product").read_excel_data()

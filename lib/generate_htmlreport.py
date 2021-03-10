@@ -25,4 +25,4 @@ def generate_html_report():
 
 
 if __name__ == "__main__":
-    generate_htmlreport()
+    generate_html_report()

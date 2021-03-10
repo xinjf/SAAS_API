@@ -9,17 +9,17 @@ from lib.connect_mysql import connect_mysql
 from utils.assert_results import assert_result
 
 excel_data = OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
-                          sheet_name="Product").read_excel_data()
+                          sheet_name="Order_Draft").read_excel_data()
 
 @ddt
-class Test_Product(unittest.TestCase):
+class Test_Order_Draft(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         cls.response = {}
 
     @data(*excel_data)
-    def test_product(self,item):
+    def test_order_draft(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         if item["sql"] is not None:
