@@ -20,14 +20,13 @@ def connect_mysql(sql):
         charset="utf8",
         cursorclass=MySQLdb.cursors.DictCursor)
     cursor = db.cursor()
-    try:
-        cursor.execute(sql)
-    except Exception as e:
-        info("sql语句执行失败：{}".format(e))
-    db.commit()
+    cursor.execute(sql)
     data = cursor.fetchall()
+    # except Exception as e:
+    #     info("sql语句{0}执行失败：{1}".format(sql,e))
+    db.commit()
     db.close()
     return data
 
-
-print(connect_mysql("SELECT * from saas_operator.firm where real_operator_id = 20")[0]["name"])
+# sql = connect_mysql("SELECT * from saas_product.product_info where real_operator_id = 20")
+# print(sql)

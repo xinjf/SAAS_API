@@ -8,3 +8,4 @@ AM_token.ini
 *.html
 *.xlsx
 *.xls
+.env
