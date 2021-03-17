@@ -22,9 +22,9 @@ class Test_Product(unittest.TestCase):
     def test_product(self,item):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
-        if item["sql"] is not None:
+        if item["method"]=="sql":
             sql = item["sql"]
-            res = connect_mysql(sql)[-1]
+            res = connect_mysql(sql)
             self.response[item["case_id"]] = res
         else:
             data = deal_with_rely(item["data"], self.response)

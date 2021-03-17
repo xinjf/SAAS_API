@@ -28,7 +28,7 @@ class Test_Firm(unittest.TestCase):
             self.response[item["case_id"]] = res
         else:
             data = deal_with_rely(item["data"], self.response)
-            print("请求参数：{}".format(data))
+            # print("请求参数：{}".format(data))
             res = http_requests(url=item["url"], data=data, method=item["method"],
                                 token=getattr(EnvironmentVariable, "token"))
             self.response[item["case_id"]] = res

@@ -10,6 +10,7 @@ def deal_with_rely(data, response):
     """正则匹配"""
     pattern = re.compile(r"\$\{(.+?)}")
     params = pattern.findall(data)
+
     for p in params:
         case_id, path = p.split(":")
         res_json = response[int(case_id)]
