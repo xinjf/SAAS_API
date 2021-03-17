@@ -23,9 +23,9 @@ class Test_Product(unittest.TestCase):
         info("当前执行的测试用例是：{}".format(item["detail"]))
 
         if item["method"]=="sql":
-            sql = item["sql"]
-            res = connect_mysql(sql)
-            self.response[item["case_id"]] = res
+            sql = item["data"]
+            res = connect_mysql(sql)[-1]
+            test_result = "pass"
         else:
             data = deal_with_rely(item["data"], self.response)
             # print("请求参数：{}".format(data))
@@ -33,9 +33,9 @@ class Test_Product(unittest.TestCase):
                                 token=getattr(EnvironmentVariable, "token"))
             self.response[item["case_id"]] = res
             # print("响应结果：{}".format(res))
+            # 断言
+            test_result = assert_result(item["check_result"], res)
 
-        # 断言
-        test_result=assert_result(item["check_result"],res)
 
         OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
                     sheet_name="Product").write_excel_data(item["case_id"] + 1,str(res),

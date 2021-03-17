@@ -16,13 +16,8 @@ def deal_with_rely(data, response):
         res_json = response[int(case_id)]
         value = extract_json(res_json, path)
         data = pattern.sub(str(value), data, 1)
-    try:
-        data = json.loads(data)
-        if "real_operator_id" in data:
-            data["real_operator_id"] = real_operator_id
-    except:
-        warning("接口参数有误，请检查参数格式.{}".format(data))
-    return data  # 返回的dict
+
+    return json.loads(data)  # 返回的dict
 
 
 def extract_json(data, path):
