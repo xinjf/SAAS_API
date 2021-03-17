@@ -18,6 +18,6 @@ LOG_PATH = os.path.join(REPORT_PATH, "logs")
 # 预发布环境
 db_path = "prod"
 operator_url = "http://staff.backend.prod-saas.heroera.com"
-real_operator_id = 41
+real_operator_id = "41"
 store_id = 91
 staff = {"mobile": "18884129577", "password": "18884129577"}

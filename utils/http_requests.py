@@ -1,5 +1,5 @@
 import requests
-from utils.settings import real_operator_id
+
 
 
 def http_requests(url,  method, data, token=None):

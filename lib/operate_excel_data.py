@@ -1,7 +1,8 @@
 from openpyxl import load_workbook
-from utils.ramdom_params import RandomParams
-from utils.settings import BASE_PATH, operator_url
 
+from lib.generate_logs import warning
+from utils.ramdom_params import RandomParams
+from utils.settings import BASE_PATH, operator_url, real_operator_id
 
 
 class OperateExcel:
@@ -26,25 +27,31 @@ class OperateExcel:
                 "header": sheet.cell(i, 4).value,
                 "url": sheet.cell(i, 5).value,
                 "data": sheet.cell(i, 6).value,
-                "sql": sheet.cell(i, 7).value,
-                "sql_check": sheet.cell(i, 8).value,
-                "check_result": sheet.cell(i, 9).value}
+                "check_result": sheet.cell(i, 7).value}
             if sub_data["case_id"] is not None:
-                if sub_data["sql"] is None:
-                    sub_data["url"] = operator_url + sub_data["url"]
-                    sub_data["check_result"] = eval(sub_data["check_result"])
-                    sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
+                # 替换运营方
+                if "${real_operator_id}" in sub_data["data"]:
+                    sub_data["data"] = sub_data["data"].replace("${real_operator_id}",real_operator_id)
+                # 判断是否是sql语句
+                if sub_data["method"]=="sql":
                     test_data.append(sub_data)
                 else:
-                    test_data.append(sub_data)
+                    try:
+                        # 处理从excel获取的数据
+                        sub_data["url"] = operator_url + sub_data["url"]
+                        sub_data["check_result"] = eval(sub_data["check_result"])
+                        sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
+                        test_data.append(sub_data)
+                    except:
+                        warning("接口参数有误，请检查参数格式")
         wb.close()  # 读取文件后需要关闭，否则会报无打开文件权限
         return test_data
 
     def write_excel_data(self, i, result, Test_result):
         wb = load_workbook(self.file_path)
         sheet = wb[self.sheet_name]
-        sheet.cell(i, 10).value = result
-        sheet.cell(i, 11).value = Test_result
+        sheet.cell(i, 8).value = result
+        sheet.cell(i, 9).value = Test_result
         wb.save(filename=self.file_path)
         wb.close()
 
@@ -55,4 +62,4 @@ class OperateExcel:
 
 
 if __name__ == "__main__":
-    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Product").read_excel_data()
+    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Firm").read_excel_data()
