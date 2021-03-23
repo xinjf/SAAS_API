@@ -31,7 +31,13 @@ def extract_json(data, path):
         # data = json.loads(data)  # json转化字典
         value = [match.value for match in exe_json.find(data)]
         value = random.choice(value)
-        print(value)
         return value
     except TypeError:
         raise ValueError("未能获取有效的参数或者给予的json路径不对，请检查参数设置")
+
+
+
+
+# data = '{"data":"${2:data[\'data\'][0][\'id\']}"}'
+# response = {2: {"data": {"data": [{"id": 1}, {"id": 2}]}}}
+# deal_with_rely(data,response)
