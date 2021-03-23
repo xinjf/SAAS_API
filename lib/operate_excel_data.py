@@ -43,7 +43,7 @@ class OperateExcel:
                         sub_data["data"] = RandomParams().build_random_params(sub_data["data"])
                         test_data.append(sub_data)
                     except:
-                        warning("接口参数有误，请检查参数格式")
+                        warning("接口参数有误，请检查参数格式:{}".format(sub_data))
         wb.close()  # 读取文件后需要关闭，否则会报无打开文件权限
         return test_data
 
@@ -62,4 +62,4 @@ class OperateExcel:
 
 
 if __name__ == "__main__":
-    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Firm").read_excel_data()
+    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Product").read_excel_data()

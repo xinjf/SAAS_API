@@ -25,7 +25,10 @@ class Test_Electricity_Template(unittest.TestCase):
         if item["method"]=="sql":
             sql = item["data"]
             res = connect_mysql(sql)[0]
+<<<<<<< HEAD
             self.response[item["case_id"]] = res
+=======
+>>>>>>> qa
             test_result = "pass"
         else:
             data = deal_with_rely(item["data"], self.response)

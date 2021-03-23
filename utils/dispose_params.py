@@ -1,3 +1,4 @@
+# utf-8
 import json
 import random
 import re
@@ -13,8 +14,8 @@ def deal_with_rely(data, response):
 
     for p in params:
         case_id, path = p.split(":")
-        res_json = response[int(case_id)]
-        value = extract_json(res_json, path)
+        res_dict = response[int(case_id)]
+        value = extract_json(res_dict, path)
         data = pattern.sub(str(value), data, 1)
 
     return json.loads(data)  # 返回的dict
@@ -22,7 +23,7 @@ def deal_with_rely(data, response):
 
 def extract_json(data, path):
     """替换参数中的正则
-    res_json: 字典
+    res_dict: 字典
     path: 字符串
     """
     exe_json = parse(path)
@@ -34,4 +35,9 @@ def extract_json(data, path):
     except TypeError:
         raise ValueError("未能获取有效的参数或者给予的json路径不对，请检查参数设置")
 
-# if __name__ == "__main__":
+
+
+
+# data = '{"data":"${2:data[\'data\'][0][\'id\']}"}'
+# response = {2: {"data": {"data": [{"id": 1}, {"id": 2}]}}}
+# deal_with_rely(data,response)

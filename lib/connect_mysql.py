@@ -1,6 +1,6 @@
 import MySQLdb
 import MySQLdb.cursors
-from lib.generate_logs import info
+from lib.generate_logs import warning
 from utils.operate_config import OperateIni
 from utils.settings import db_path
 
@@ -19,14 +19,17 @@ def connect_mysql(sql):
         port=3306,
         charset="utf8",
         cursorclass=MySQLdb.cursors.DictCursor)
-    cursor = db.cursor()
-    cursor.execute(sql)
-    data = cursor.fetchall()
-    # except Exception as e:
-    #     info("sql语句{0}执行失败：{1}".format(sql,e))
-    db.commit()
-    db.close()
-    return data
+    try:
+        cursor = db.cursor()
+        cursor.execute(sql)
+        data = cursor.fetchall()
+        db.commit()
+        db.close()
+        return data
+    except :
+        warning("sql语句错误:{0}".format(sql))
 
-# sql = connect_mysql("SELECT * from saas_product.product_info where real_operator_id = 20")
+
+
+# sql = connect_mysql("SELECT * from sas_product.product_info where real_operator_id = 20")
 # print(sql)
