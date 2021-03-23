@@ -24,7 +24,7 @@ class %(class_name)s(unittest.TestCase):
 
         if item["method"]=="sql":
             sql = item["data"]
-            res = connect_mysql(sql)[-1]
+            res = connect_mysql(sql)[0]
             test_result = "pass"
         else:
             data = deal_with_rely(item["data"], self.response)
