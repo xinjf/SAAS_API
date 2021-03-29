@@ -29,6 +29,8 @@ class RandomParams:
                 data = data.replace("${random_str}", self.random_str())
             if "${random_phone}" in data:
                 data = data.replace("${random_phone}", self.random_phone())
+            # if "random_time" in data:
+            #     data =
         except ValueError:
             info("random params isn`t json or dict")
         return data

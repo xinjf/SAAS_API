@@ -25,10 +25,12 @@ class Test_Order_Draft(unittest.TestCase):
         if item["method"]=="sql":
             sql = item["data"]
             res = connect_mysql(sql)[0]
+            self.response[item["case_id"]] = res
             test_result = "pass"
+
         else:
             data = deal_with_rely(item["data"], self.response)
-            # print("请求参数：{}".format(data))
+            print("请求参数：{}".format(data))
             res = http_requests(url=item["url"], data=data, method=item["method"],
                                 token=getattr(EnvironmentVariable, "token"))
             self.response[item["case_id"]] = res

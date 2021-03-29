@@ -26,6 +26,7 @@ class Test_Staff(unittest.TestCase):
             sql = item["data"]
             res = connect_mysql(sql)[0]
             test_result = "pass"
+            self.response[item["case_id"]] = res
         else:
             data = deal_with_rely(item["data"], self.response)
             # print("请求参数：{}".format(data))
