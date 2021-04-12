@@ -21,6 +21,6 @@ if __name__ == "__main__":
     info("生成测试用例列表：{}".format(build_case()))
     info("-------- 开始执行用例----------------")
     generate_html_report().run(choose_all_cases(["AssetManagement"], "test*.py"))  # 执行用例
-    SendNewMail().send_mail_html()
+    # SendNewMail().send_mail_html()
     SendDingDing().send()
     info("删除过期的报告:{}".format(delete_expired_files()))  # 删除过期文件
