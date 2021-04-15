@@ -10,7 +10,7 @@ def connect_mysql(sql):
     ：:param
     db_name: 数据库名称
     sql： 需要执行的sql语句"""
-    config = eval(OperateIni("db.ini").ini_read_items(db_path)["db"])
+    config = eval(OperateIni("db.ini").ini_read_items("prod")["db"])
     # db = mysql.connector.connect(**config)
     db = MySQLdb.connect(
         host=config["host"],
@@ -31,5 +31,5 @@ def connect_mysql(sql):
 
 
 
-# sql = connect_mysql("SELECT * from sas_product.product_info where real_operator_id = 20")
+# sql = connect_mysql("SELECT * FROM saas_product.product_info where real_operator_id = 41 ORDER BY id DESC LIMIT 1")
 # print(sql)
