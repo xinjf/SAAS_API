@@ -40,7 +40,7 @@ class Test_User(unittest.TestCase):
 
 
         OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
-                    sheet_name="Product").write_excel_data(item["case_id"] + 1,str(res),
+                    sheet_name="User").write_excel_data(item["case_id"] + 1,str(res),
                                                                     test_result)
 
 

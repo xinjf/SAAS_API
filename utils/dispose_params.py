@@ -12,7 +12,6 @@ def deal_with_rely(data, response):
     pattern = re.compile(r"\$\{(.+?)}")
     params = pattern.findall(data)
     for p in params:
-        print("p:{}".format(p))
         case_id, path = p.split(":")
         res_dict = response[int(case_id)]
         value = extract_json(res_dict, path)
