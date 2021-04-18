@@ -3,6 +3,7 @@ import json
 import random
 import string
 from lib.generate_logs import info
+import time
 
 class RandomParams:
 
@@ -29,6 +30,10 @@ class RandomParams:
                 data = data.replace("${random_str}", self.random_str())
             if "${random_phone}" in data:
                 data = data.replace("${random_phone}", self.random_phone())
+            if "${datetime}" in data:
+                datetime = time.strftime("%Y-%m-%d")
+                data = data.replace("${datetime}",datetime)
+
         except ValueError:
             info("random params isn`t json or dict")
         return data
