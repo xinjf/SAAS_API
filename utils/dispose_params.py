@@ -16,7 +16,6 @@ def deal_with_rely(data, response):
         res_dict = response[int(case_id)]
         value = extract_json(res_dict, path)
         data = pattern.sub(str(value), data, 1)
-    print(data)
     return json.loads(data)  # 返回的dict
 
 
