@@ -3,7 +3,7 @@ import requests
 
 
 def http_requests(url,  method, data, token=None):
-    header = {"Authorization": token}
+    header = {"Authorization": token,"Content-Type":"application/json"}
     if method.lower() == "get":
         res = requests.get(url=url, params=data,headers = header)
         return res.json()

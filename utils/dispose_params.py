@@ -22,7 +22,7 @@ def deal_with_rely(data, response):
 def extract_json(data, path):
     """替换参数中的正则
     res_dict: 字典
-    path: 字符串
+    path: 字符串${1：}
     """
     exe_json = parse(path)
     try:
@@ -35,7 +35,13 @@ def extract_json(data, path):
 
 
 
-#
-# data = '{"data111":"${2:data[\'data1\']}","data222":"${2:data2}"}'
-# response = {2: {"data": {"data1":{"data3":1}},"data2":{"data2":3}}}
+
+# data = '{"data111":"${2:data}","data222":"${2:data2}"}'
+# response = {2: {"data": [1,2,3,4],"data2":{"data2":3}}}
+# for key,value in response.items():
+#     print(key,value)
+
+
 # deal_with_rely(data,response)
+
+

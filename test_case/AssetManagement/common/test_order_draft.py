@@ -29,9 +29,7 @@ class Test_Order_Draft(unittest.TestCase):
             test_result = "pass"
 
         else:
-
             data = deal_with_rely(item["data"], self.response)
-
             # print("请求参数：{}".format(data))
             res = http_requests(url=item["url"], data=data, method=item["method"],
                                 token=getattr(EnvironmentVariable, "token"))
@@ -42,7 +40,7 @@ class Test_Order_Draft(unittest.TestCase):
 
 
         OperateExcel(r"\test_data\AssetManagement\common\common.xlsx",
-                    sheet_name="Order_Draft").write_excel_data(item["case_id"]+1,str(res),
+                    sheet_name="Order_Draft").write_excel_data(item["case_id"] + 1,str(res),
                                                                     test_result)
 
 
