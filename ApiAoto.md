@@ -18,4 +18,5 @@
     d、编写excel用例时，参数通过json文件，满足json格式，至少能保证参数格式正确性。
     e、如果用例执行失败，可在report的logs文件、html报告中找到错误的信息。
     f、调试可在run.py后，生成的test_case的用例，取消请求和响应的注释，可打印请求和响应的参数。
-    g、如果还不能解决，可致电：18884129577
+
+github地址：git@github.com:xinjf/SAAS_API.git
