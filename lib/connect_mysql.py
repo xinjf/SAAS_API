@@ -31,5 +31,6 @@ def connect_mysql(sql):
 
 
 
-# sql = connect_mysql("SELECT * FROM saas_product.product_info where real_operator_id = 41 ORDER BY id DESC LIMIT 1")
+# sql = connect_mysql("SELECT product_info FROM saas_order.order_product WHERE real_operator_id = 41 LIMIT 1")[0]
+# sql = sql["product_info"]
 # print(sql)

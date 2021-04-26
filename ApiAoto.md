@@ -11,6 +11,7 @@
     test_case 存放用例的目录，base_case.text为用例生成模板，所有的用例都是通过文本生成。
     utils   存放数据存放的方法  如：断言、生成随机数、获取token、读写config文件、基础配置数据
     run.py  执行脚本文件
+    
  3、注意点：
     a、用例添加只需在excel编写，规则参照已经编写的用例。
     b、切换运营方、登录账号等，在utils.settings.py文件修改
