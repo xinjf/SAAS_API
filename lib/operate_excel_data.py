@@ -35,6 +35,7 @@ class OperateExcel:
                 # 判断是否是sql语句
                 if sub_data["method"]=="sql":
                     test_data.append(sub_data)
+
                 else:
                     try:
                         # 处理从excel获取的数据
@@ -62,4 +63,4 @@ class OperateExcel:
 
 
 if __name__ == "__main__":
-    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Product").read_excel_data()
+    OperateExcel(r"\test_data\AssetManagement\common\common.xlsx", sheet_name="Order_Draft").read_excel_data()

@@ -1,4 +1,6 @@
 import hashlib
+import json
+
 import requests
 import warnings
 from utils.operate_config import OperateIni
@@ -21,7 +23,7 @@ class LoginSet():
         token_all = OperateIni("AM_token.ini").ini_read_items("token")
         token = token_all["token"]
         start_time = token_all["time"]
-        end_time = (datetime.datetime.now() - datetime.timedelta(minutes=5)).strftime("%Y-%m-%d %H:%M:%S")
+        end_time = (datetime.datetime.now() - datetime.timedelta(minutes=3)).strftime("%Y-%m-%d %H:%M:%S")
         if token != "":
             if start_time > end_time:
                 return token
