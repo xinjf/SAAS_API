@@ -21,3 +21,5 @@
     f、调试可在run.py后，生成的test_case的用例，取消请求和响应的注释，可打印请求和响应的参数。
 
 github地址：git@github.com:xinjf/SAAS_API.git
+
+订单合同审批流程的各环节审批的人员设置为执行脚本的登录用户。
